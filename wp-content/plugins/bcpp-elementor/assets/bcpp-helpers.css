@@ -1,0 +1,71 @@
+/* Bucks Photo – helper CSS for details Elementor has no setting for. Colors/fonts come from Site Settings. */
+
+body { background-color: var(--e-global-color-bcpppaper, #faf8f4); }
+
+/* Words wrapped in <em> inside any Heading widget become the orange italic highlight */
+.elementor-heading-title em { color: var(--e-global-color-accent); font-style: italic; font-weight: 500; }
+
+/* Balanced heading lines */
+.elementor-heading-title { text-wrap: balance; }
+
+/* Text Editor: no trailing gap after the last paragraph */
+.elementor-widget-text-editor p:last-child { margin-bottom: 0; }
+
+/* Cards (containers with the CSS class bcpp-card) lift on hover */
+.e-con.bcpp-card { transition: box-shadow .2s ease; }
+.e-con.bcpp-card:hover { box-shadow: 0 2px 4px rgba(28,26,23,.06), 0 18px 48px rgba(28,26,23,.14); }
+
+/* Text-link buttons (Button widget with the CSS class bcpp-link) */
+.bcpp-link .elementor-button { padding: 0 !important; background: transparent !important; border: 0 !important; }
+.bcpp-link .elementor-button:hover .elementor-button-icon { transform: translateX(3px); }
+.bcpp-link .elementor-button-icon { transition: transform .18s ease; }
+
+/* Call to Action tiles: keep the label readable on any photo */
+.bcpp-tile .elementor-cta__content { background: linear-gradient(transparent, rgba(0,0,0,.78)); }
+
+/* Visible keyboard focus */
+a:focus-visible, button:focus-visible, .elementor-button:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 3px; border-radius: 4px; }
+
+/* Hello styles figcaption italic; the design uses upright captions */
+figcaption, .widget-image-caption { font-style: normal; }
+
+/* Nav Menu dropdown: rounded panel */
+.elementor-nav-menu--dropdown.elementor-nav-menu__container { border-radius: 12px; }
+
+/* Header "Order prints" button stays on one line */
+.elementor-location-header .elementor-button { white-space: nowrap; }
+
+/* Photos set into the copy (Text Editor → Add Media → align right/left). Text wraps around them. */
+.elementor-widget-text-editor .alignright { float: right; margin: 0 0 14px 20px; }
+.elementor-widget-text-editor .alignleft { float: left; margin: 0 20px 14px 0; }
+.elementor-widget-text-editor .aligncenter { display: block; margin: 0 auto 18px; }
+.elementor-widget-text-editor .wp-caption { max-width: 100%; }
+.elementor-widget-text-editor .wp-caption img, .elementor-widget-text-editor img.alignright, .elementor-widget-text-editor img.alignleft { display: block; max-width: 100%; height: auto; }
+.elementor-widget-text-editor .wp-caption-text { margin: 10px 0 0; text-align: center; font-size: 14px; line-height: 1.5; color: var(--e-global-color-secondary); font-style: normal; }
+.elementor-widget-text-editor::after { content: ""; display: table; clear: both; }
+@media (max-width: 600px) {
+	.elementor-widget-text-editor .alignright, .elementor-widget-text-editor .alignleft { float: none; margin: 4px auto 22px; }
+}
+
+/* "by Epson®" part of a paper name: same heading, quieter */
+.bcpp-brand { display: block; margin-top: 4px; font-family: var(--e-global-typography-text-font-family), sans-serif; font-size: 14px; font-weight: 500; letter-spacing: .02em; color: var(--e-global-color-secondary); }
+
+/* Photo Genres accordion (Elementor Accordion widget with the CSS class bcpp-accordion): simple divider lines */
+.bcpp-accordion .e-n-accordion-item { border-bottom: 1px solid var(--e-global-color-bcppline, #e3dcd0); }
+.bcpp-accordion .e-n-accordion-item:first-child { border-top: 1px solid var(--e-global-color-bcppline, #e3dcd0); }
+.bcpp-accordion .e-n-accordion-item-title { border: 0 !important; background: transparent !important; }
+.bcpp-accordion .e-n-accordion-item > .e-con { border: 0 !important; background: transparent !important; }
+.bcpp-accordion .e-n-accordion-item-title-text { margin: 0; }
+.bcpp-accordion .e-n-accordion-item-title:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+
+/* Resource pages: anchored headings clear the sticky header; compact "On this page" list */
+.bcpp-article [id] { scroll-margin-top: 120px; }
+.bcpp-toc { margin: 0; padding-left: 1.2em; font-size: .9375rem; }
+.bcpp-toc li { margin-bottom: 6px; }
+.bcpp-toc a { text-decoration: none; }
+.bcpp-toc a:hover { text-decoration: underline; }
+/* Download cards: lift on hover like other cards */
+.bcpp-download { color: inherit; text-decoration: none; }
+.bcpp-download:hover { border-color: var(--e-global-color-accent, #b5532a) !important; }
+.bcpp-download .elementor-widget-text-editor p { margin: 0; }
+.bcpp-download > .e-con { flex: 1 1 0% !important; min-width: 0; }

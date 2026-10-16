@@ -1,0 +1,27 @@
+/* Testimonials (Bucks Photo) widget. Colors, fonts and spacing are set in the widget's Style tab; these are the fallbacks. */
+.bcpp-testimonials { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.bcpp-testimonial {
+	margin: 0; display: flex; flex-direction: column; gap: 12px;
+	background: #fff; border: 1px solid #e3dcd0; border-radius: 14px; padding: 26px;
+	transition: box-shadow .2s ease;
+}
+.bcpp-testimonial__stars { display: flex; gap: 2px; font-size: 18px; line-height: 1; color: #b45309; }
+.bcpp-testimonial__stars .is-off { color: #e3dcd0; }
+.bcpp-testimonial__quote { margin: 0; padding: 0; border: 0; font-style: normal; quotes: none; }
+.bcpp-testimonial__quote::before, .bcpp-testimonial__quote::after { content: none; }
+.bcpp-testimonial__quote p { margin: 0 0 .9em; }
+.bcpp-testimonial__quote p:last-child { margin-bottom: 0; }
+.bcpp-testimonial__author { margin-top: auto; padding-top: 6px; display: flex; align-items: center; gap: 12px; font-style: normal; }
+.bcpp-testimonial__photo { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; flex: none; }
+.bcpp-testimonial__who { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.bcpp-testimonial__name a { color: inherit; text-decoration: none; }
+.bcpp-testimonial__name a:hover, .bcpp-testimonial__name a:focus { text-decoration: underline; text-underline-offset: 3px; }
+.bcpp-testimonials__empty { margin: 0; opacity: .75; }
+@media (max-width: 1024px) { .bcpp-testimonials { grid-template-columns: minmax(0, 1fr); } }
+
+/* Masonry layout: cards flow down CSS columns, so long and short reviews pack without gaps. */
+.bcpp-layout-masonry .bcpp-testimonials { display: block; column-count: var(--bcpp-cols, 3); column-gap: var(--bcpp-gap, 24px); }
+/* !important: Elementor resets the margin on every figure inside a widget */
+.bcpp-layout-masonry .bcpp-testimonial { break-inside: avoid; margin: 0 0 var(--bcpp-gap, 24px) !important; }
+@media (max-width: 1024px) { .bcpp-layout-masonry .bcpp-testimonials { column-count: var(--bcpp-cols, 2); } }
+@media (max-width: 767px) { .bcpp-layout-masonry .bcpp-testimonials { column-count: 1; } }

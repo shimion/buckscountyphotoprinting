@@ -1,0 +1,2233 @@
+/**
+ * Bucks County Photo Printing — Order Form Stylesheet
+ * Exact match to the target mockup design.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+/* Base Form Container */
+.frm_forms,
+.frm_forms.with_frm_style,
+.bcpp-order-form,
+#form_bcpp-order-form,
+.frm-show-form.bcpp-order-form {
+	max-width: 1040px !important;
+	width: 100% !important;
+	margin: 0 auto !important;
+	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif !important;
+	color: #334155 !important;
+	--text-color-disabled: #334155 !important;
+	box-sizing: border-box !important;
+}
+
+.bcpp-order-form *,
+#form_bcpp-order-form *,
+.frm_forms * {
+	box-sizing: border-box !important;
+	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* 1. Top Notice */
+.bcpp-top-notice {
+	font-size: 13.5px;
+	font-style: italic;
+	color: #555;
+	margin-bottom: 16px;
+	line-height: 1.5;
+	width: 100%;
+}
+
+.bcpp-top-notice a {
+	color: #2563eb;
+	text-decoration: underline;
+}
+
+/* 2. Order Form Title */
+.bcpp-header-title {
+	margin-bottom: 24px;
+	width: 100%;
+}
+
+.bcpp-header-title h1,
+.bcpp-header-title #order_form_abc {
+	color: #29ABDE;
+	font-size: 30px;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+}
+
+/* 3. Section Titles */
+.bcpp-section-title {
+	font-size: 17px;
+	font-weight: 700;
+	color: #1e293b;
+	margin-top: 24px;
+	margin-bottom: 6px;
+	line-height: 1.4;
+	clear: both;
+	width: 100%;
+}
+
+.bcpp-section-title .desktoptext,
+.bcpp-section-title span,
+#premium_papers .desktoptext,
+#specialty_papers .desktoptext,
+#additional_services .desktoptext,
+#additional_papers .desktoptext {
+	font-size: 13.5px !important;
+	font-weight: 400 !important;
+	color: #4c4c4c !important;
+	margin-left: 6px !important;
+}
+
+.bcpp-div-border {
+	width: 100% !important;
+	height: 1px !important;
+	border-bottom: 1px solid #cbd5e1 !important;
+	margin-top: 8px !important;
+	margin-bottom: 16px !important;
+	clear: both !important;
+	display: block !important;
+}
+
+/* 4. Instruction Banner */
+.bcpp-instruction-banner {
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+	padding: 12px 18px;
+	font-size: 13.5px;
+	color: #334155;
+	line-height: 1.6;
+	margin: 18px 0 24px 0;
+	clear: both;
+	width: 100%;
+	display: block;
+}
+
+.bcpp-instruction-banner a {
+	color: #2563eb;
+	text-decoration: underline;
+}
+
+.bcpp-instruction-banner .bcpp-inline-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #64748b;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	vertical-align: middle;
+	margin: 0 3px;
+	line-height: 1;
+}
+
+/* 5. General Form Inputs */
+.bcpp-order-form input[type="text"],
+.bcpp-order-form input[type="email"],
+.bcpp-order-form input[type="number"],
+.bcpp-order-form input[type="tel"],
+.bcpp-order-form select,
+.bcpp-order-form textarea,
+#form_bcpp-order-form input[type="text"],
+#form_bcpp-order-form input[type="email"],
+#form_bcpp-order-form input[type="number"],
+#form_bcpp-order-form input[type="tel"],
+#form_bcpp-order-form select,
+#form_bcpp-order-form textarea,
+.frm_forms input[type="text"],
+.frm_forms input[type="email"],
+.frm_forms input[type="number"],
+.frm_forms input[type="tel"],
+.frm_forms select,
+.frm_forms textarea {
+	width: 100% !important;
+	max-width: 100% !important;
+	min-width: 100% !important;
+	height: 42px !important;
+	padding: 0 12px !important;
+	border: 1px solid #cbd5e1 !important;
+	border-radius: 4px !important;
+	font-size: 14px !important;
+	color: #334155 !important;
+	background-color: #fff !important;
+	box-shadow: none !important;
+	box-sizing: border-box !important;
+	display: block !important;
+	transition: border-color 0.15s ease-in-out !important;
+}
+
+.bcpp-order-form select,
+#form_bcpp-order-form select,
+.frm_forms select {
+	appearance: none !important;
+	-webkit-appearance: none !important;
+	background-image: url('data:image/svg+xml;utf8,<svg fill="%2364748b" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') !important;
+	background-repeat: no-repeat !important;
+	background-position: right 8px center !important;
+	padding-right: 28px !important;
+	cursor: pointer !important;
+}
+
+.bcpp-order-form input::placeholder,
+.bcpp-order-form textarea::placeholder {
+	color: #94a3b8 !important;
+	opacity: 1 !important;
+}
+
+.bcpp-order-form input:focus,
+.bcpp-order-form select:focus,
+.bcpp-order-form textarea:focus,
+#form_bcpp-order-form input:focus,
+#form_bcpp-order-form select:focus,
+#form_bcpp-order-form textarea:focus {
+	border-color: #29abde !important;
+	outline: 2px solid rgba(41, 171, 222, 0.2) !important;
+}
+
+/* 6. Fields Container (Flexbox) */
+.bcpp-order-form .frm_fields_container,
+#form_bcpp-order-form .frm_fields_container,
+.frm_forms .frm_fields_container {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: wrap !important;
+	justify-content: space-between !important;
+	align-items: flex-start !important;
+	grid-template-columns: none !important;
+	gap: 0 !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	box-sizing: border-box !important;
+}
+
+/* 7. "Your Information" Section Labels & Grid */
+.bcpp-order-form div.bcpp-half .frm_primary_label,
+.bcpp-order-form div.bcpp-city .frm_primary_label,
+.bcpp-order-form div.bcpp-state .frm_primary_label,
+.bcpp-order-form div.bcpp-zip .frm_primary_label,
+#form_bcpp-order-form div.bcpp-half .frm_primary_label,
+#form_bcpp-order-form div.bcpp-city .frm_primary_label,
+#form_bcpp-order-form div.bcpp-state .frm_primary_label,
+#form_bcpp-order-form div.bcpp-zip .frm_primary_label {
+	display: block !important;
+	font-size: 13.5px !important;
+	font-weight: 600 !important;
+	color: #334155 !important;
+	margin-bottom: 6px !important;
+	padding: 0 !important;
+}
+
+.bcpp-order-form div.bcpp-half,
+#form_bcpp-order-form div.bcpp-half,
+.frm_forms div.bcpp-half {
+	width: 48.5% !important;
+	max-width: 48.5% !important;
+	flex: 0 0 48.5% !important;
+	margin-bottom: 14px !important;
+	margin-top: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+}
+
+.bcpp-order-form div.bcpp-city,
+#form_bcpp-order-form div.bcpp-city,
+.frm_forms div.bcpp-city {
+	width: 48.5% !important;
+	max-width: 48.5% !important;
+	flex: 0 0 48.5% !important;
+	margin-bottom: 14px !important;
+	margin-top: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+}
+
+.bcpp-order-form div.bcpp-state,
+#form_bcpp-order-form div.bcpp-state,
+.frm_forms div.bcpp-state {
+	width: 29% !important;
+	max-width: 29% !important;
+	flex: 0 0 29% !important;
+	margin-bottom: 14px !important;
+	margin-top: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+}
+
+.bcpp-order-form div.bcpp-zip,
+#form_bcpp-order-form div.bcpp-zip,
+.frm_forms div.bcpp-zip {
+	width: 17% !important;
+	max-width: 17% !important;
+	flex: 0 0 17% !important;
+	margin-bottom: 14px !important;
+	margin-top: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+}
+
+/* Full Width Sections in Container & Defeat Formidable 30px spacing */
+.with_frm_style .frm_section_heading,
+.frm_style_formidable-style.with_frm_style .frm_section_heading,
+.frm_style_formidable-style.with_frm_style .form-field.frm_section_heading,
+.with_frm_style .form-field.frm_section_heading,
+.with_frm_style .frm_section_heading.bcpp-repeat,
+.frm_style_formidable-style.with_frm_style .frm_section_heading.bcpp-repeat,
+.bcpp-order-form div.bcpp-repeat,
+.bcpp-order-form div.frm_section_heading,
+.bcpp-order-form .bcpp-premium,
+.bcpp-order-form .bcpp-specialty,
+.bcpp-order-form .bcpp-additional,
+.bcpp-order-form div.bcpp-bottom-section,
+#form_bcpp-order-form div.bcpp-repeat,
+#form_bcpp-order-form div.frm_section_heading,
+#form_bcpp-order-form .bcpp-premium,
+#form_bcpp-order-form .bcpp-specialty,
+#form_bcpp-order-form .bcpp-additional,
+.frm_forms div.bcpp-repeat,
+.frm_forms div.frm_section_heading,
+.frm_forms .bcpp-premium,
+.frm_forms .bcpp-specialty,
+.frm_forms .bcpp-additional,
+#frm_field_52_container,
+#frm_field_60_container,
+#frm_field_98_container {
+	width: 100% !important;
+	max-width: 100% !important;
+	flex: 0 0 100% !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	border-top: none !important;
+	border: none !important;
+	min-height: 0 !important;
+	grid-column: 1 / -1 !important;
+}
+
+/* 8. Repeatable Section Column Headers (Desktop - Outside of Row Box Border) */
+.bcpp-labels-section {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: nowrap !important;
+	align-items: center !important;
+	gap: 8px !important;
+	width: 100% !important;
+	margin-top: 0 !important;
+	margin-bottom: 2px !important;
+	padding: 0 19px !important;
+	box-sizing: border-box !important;
+}
+
+.bcpp-labels-section .bcpp-lbl-file   { width: 21% !important; max-width: 21% !important; flex: 0 0 21% !important; margin: 0 !important; }
+.bcpp-labels-section .bcpp-lbl-border { width: 7% !important; max-width: 7% !important; flex: 0 0 7% !important; margin: 0 !important; }
+.bcpp-labels-section .bcpp-lbl-size   { width: 18% !important; max-width: 18% !important; flex: 0 0 18% !important; margin: 0 !important; }
+.bcpp-labels-section .bcpp-lbl-paper  { width: 18% !important; max-width: 18% !important; flex: 0 0 18% !important; margin: 0 !important; }
+.bcpp-labels-section .bcpp-lbl-amt    { width: 6% !important; max-width: 6% !important; flex: 0 0 6% !important; margin: 0 !important; text-align: left !important; }
+.bcpp-labels-section .bcpp-lbl-sub    { width: 9% !important; max-width: 9% !important; flex: 0 0 9% !important; margin: 0 !important; text-align: left !important; }
+
+.bcpp-labels-section h4 {
+	font-size: 13.5px !important;
+	font-weight: 700 !important;
+	color: #334155 !important;
+	margin: 0 !important;
+	text-align: left !important;
+}
+
+/* 9. Repeatable Rows Styling & Hiding Default Heading Structure */
+.with_frm_style .frm_section_heading h3,
+.with_frm_style .frm_section_heading .frm_section_spacing,
+.frm_style_formidable-style.with_frm_style .frm_section_heading h3,
+.frm_style_formidable-style.with_frm_style .frm-show-form .frm_section_heading .frm_section_spacing,
+.frm_style_formidable-style.with_frm_style .frm-show-form .frm_section_heading h3[class*="frm_pos_"],
+.frm_style_formidable-style.with_frm_style .frm_section_heading h3[class*="frm_pos_"],
+.frm_section_heading .frm_section_spacing,
+.frm_section_heading h3,
+.bcpp-repeat h3,
+.bcpp-repeat .frm_section_spacing,
+.bcpp-order-form .frm_section_heading > h3,
+.bcpp-order-form .frm_section_heading > .frm_description,
+.bcpp-order-form .frm_section_heading > a.frm_add_form_row,
+.bcpp-order-form .frm_section_heading > span.show_repeat_sec,
+.bcpp-order-form .frm_section_heading > .frm_repeat_buttons,
+.bcpp-order-form .frm_section_heading > a.frm_remove_form_row,
+#form_bcpp-order-form .frm_section_heading > h3,
+#form_bcpp-order-form .frm_section_heading > .frm_description,
+#form_bcpp-order-form .frm_section_heading > a.frm_add_form_row,
+#form_bcpp-order-form .frm_section_heading > span.show_repeat_sec,
+#form_bcpp-order-form .frm_section_heading > .frm_repeat_buttons,
+.frm_forms .frm_section_heading > h3,
+.frm_forms .frm_section_heading > .frm_description,
+.frm_forms .frm_section_heading > a.frm_add_form_row,
+.frm_forms .frm_section_heading > span.show_repeat_sec {
+	display: none !important;
+	visibility: hidden !important;
+	margin: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	padding: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	height: 0 !important;
+	min-height: 0 !important;
+	line-height: 0 !important;
+	font-size: 0 !important;
+	border: none !important;
+	border-top: none !important;
+}
+
+.bcpp-order-form .bcpp-premium .frm_repeat_sec,
+.bcpp-order-form .bcpp-premium .frm_repeat_both,
+.bcpp-order-form .bcpp-specialty .frm_repeat_sec,
+.bcpp-order-form .bcpp-specialty .frm_repeat_both,
+.bcpp-order-form .bcpp-additional .frm_repeat_sec,
+.bcpp-order-form .bcpp-additional .frm_repeat_both,
+#form_bcpp-order-form .bcpp-premium .frm_repeat_sec,
+#form_bcpp-order-form .bcpp-premium .frm_repeat_both,
+#form_bcpp-order-form .bcpp-specialty .frm_repeat_sec,
+#form_bcpp-order-form .bcpp-specialty .frm_repeat_both,
+#form_bcpp-order-form .bcpp-additional .frm_repeat_sec,
+#form_bcpp-order-form .bcpp-additional .frm_repeat_both,
+.frm_forms .bcpp-premium .frm_repeat_sec,
+.frm_forms .bcpp-premium .frm_repeat_both,
+.frm_forms .bcpp-specialty .frm_repeat_sec,
+.frm_forms .bcpp-specialty .frm_repeat_both,
+.frm_forms .bcpp-additional .frm_repeat_sec,
+.frm_forms .bcpp-additional .frm_repeat_both {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: nowrap !important;
+	align-items: center !important;
+	width: 100% !important;
+	grid-template-columns: none !important;
+	gap: 8px !important;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	padding: 14px 18px !important;
+	border: 1px solid #e2e8f0 !important;
+	border-radius: 6px !important;
+	background-color: #ffffff !important;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02) !important;
+	box-sizing: border-box !important;
+}
+
+.bcpp-order-form .bcpp-repeat .frm_primary_label,
+#form_bcpp-order-form .bcpp-repeat .frm_primary_label,
+.frm_forms .bcpp-repeat .frm_primary_label {
+	display: none !important;
+}
+
+.bcpp-order-form .frm_repeat_sec .frm_form_field:not(.frm_repeat_buttons),
+.bcpp-order-form .frm_repeat_both .frm_form_field:not(.frm_repeat_buttons),
+#form_bcpp-order-form .frm_repeat_sec .frm_form_field:not(.frm_repeat_buttons),
+#form_bcpp-order-form .frm_repeat_both .frm_form_field:not(.frm_repeat_buttons),
+.frm_forms .frm_repeat_sec .frm_form_field:not(.frm_repeat_buttons),
+.frm_forms .frm_repeat_both .frm_form_field:not(.frm_repeat_buttons),
+.frm_repeat_sec .frm_form_field:not(.frm_repeat_buttons),
+.frm_repeat_both .frm_form_field:not(.frm_repeat_buttons) {
+	margin: 0 !important;
+	padding: 0 !important;
+	flex-shrink: 0 !important;
+	float: none !important;
+	clear: none !important;
+}
+
+.bcpp-order-form .frm_repeat_sec .bcpp-col-file,
+#form_bcpp-order-form .frm_repeat_sec .bcpp-col-file,
+.frm_forms .frm_repeat_sec .bcpp-col-file   { width: 21% !important; max-width: 21% !important; flex: 0 0 21% !important; margin: 0 !important; }
+
+.bcpp-order-form .frm_repeat_sec .bcpp-col-border,
+#form_bcpp-order-form .frm_repeat_sec .bcpp-col-border,
+.frm_forms .frm_repeat_sec .bcpp-col-border { width: 7% !important; max-width: 7% !important; flex: 0 0 7% !important; margin: 0 !important; }
+
+.bcpp-order-form .frm_repeat_sec .bcpp-col-size,
+#form_bcpp-order-form .frm_repeat_sec .bcpp-col-size,
+.frm_forms .frm_repeat_sec .bcpp-col-size   { width: 18% !important; max-width: 18% !important; flex: 0 0 18% !important; margin: 0 !important; }
+
+.bcpp-order-form .frm_repeat_sec .bcpp-col-paper,
+#form_bcpp-order-form .frm_repeat_sec .bcpp-col-paper,
+.frm_forms .frm_repeat_sec .bcpp-col-paper  { width: 18% !important; max-width: 18% !important; flex: 0 0 18% !important; margin: 0 !important; }
+
+.bcpp-order-form .frm_repeat_sec .bcpp-col-amt,
+#form_bcpp-order-form .frm_repeat_sec .bcpp-col-amt,
+.frm_forms .frm_repeat_sec .bcpp-col-amt    { width: 6% !important; max-width: 6% !important; flex: 0 0 6% !important; margin: 0 !important; }
+
+.bcpp-order-form .frm_repeat_sec .bcpp-col-sub,
+#form_bcpp-order-form .frm_repeat_sec .bcpp-col-sub,
+.frm_forms .frm_repeat_sec .bcpp-col-sub    { width: 9% !important; max-width: 9% !important; flex: 0 0 9% !important; margin: 0 !important; }
+
+.bcpp-order-form .bcpp-col-amt input,
+#form_bcpp-order-form .bcpp-col-amt input,
+.frm_forms .bcpp-col-amt input {
+	text-align: center !important;
+}
+
+.bcpp-order-form .bcpp-col-sub input,
+#form_bcpp-order-form .bcpp-col-sub input,
+.frm_forms .bcpp-col-sub input {
+	text-align: right !important;
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	color: #1e293b !important;
+	border: 1px solid #cbd5e1 !important;
+	border-radius: 4px !important;
+	background: #ffffff !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03) !important;
+	padding: 0 10px !important;
+	display: block !important;
+	width: 100% !important;
+	height: 42px !important;
+	line-height: 42px !important;
+	box-sizing: border-box !important;
+}
+
+/* 10. Action Buttons (+ Orange, – Grey) - Right Aligned */
+.bcpp-order-form .frm_repeat_buttons,
+#form_bcpp-order-form .frm_repeat_buttons,
+.frm_forms .frm_repeat_buttons,
+.bcpp-order-form div.frm_repeat_buttons,
+#form_bcpp-order-form div.frm_repeat_buttons,
+.frm_forms div.frm_repeat_buttons,
+.bcpp-repeat .frm_repeat_buttons,
+.bcpp-repeat div.frm_repeat_buttons,
+.bcpp-repeat-buttons-col,
+.frm_repeat_buttons.frm3,
+.frm_repeat_buttons.bcpp-repeat-buttons-col {
+	display: inline-flex !important;
+	flex-direction: row !important;
+	align-items: center !important;
+	justify-content: flex-end !important;
+	margin-left: auto !important;
+	margin-right: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	height: 42px !important;
+	line-height: 42px !important;
+	white-space: nowrap !important;
+	flex: 0 0 auto !important;
+	width: auto !important;
+	max-width: none !important;
+	min-width: 0 !important;
+	float: none !important;
+	clear: none !important;
+	grid-column: auto !important;
+	grid-column-start: auto !important;
+	grid-column-end: auto !important;
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	gap: 6px !important;
+}
+
+/* Orange Plus Button */
+.bcpp-order-form .frm_add_form_row,
+#form_bcpp-order-form .frm_add_form_row,
+.frm_forms .frm_add_form_row {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 32px !important;
+	height: 32px !important;
+	min-width: 32px !important;
+	max-width: 32px !important;
+	border-radius: 50% !important;
+	background-color: #F26522 !important;
+	background: #F26522 !important;
+	color: #fff !important;
+	font-size: 0 !important;
+	line-height: 1 !important;
+	text-align: center !important;
+	border: 0 !important;
+	cursor: pointer !important;
+	text-decoration: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1) !important;
+	vertical-align: middle !important;
+	box-sizing: border-box !important;
+	transition: background-color 0.15s ease, transform 0.1s ease !important;
+}
+
+.bcpp-order-form .frm_add_form_row:hover,
+#form_bcpp-order-form .frm_add_form_row:hover,
+.frm_forms .frm_add_form_row:hover {
+	background-color: #EA580C !important;
+	background: #EA580C !important;
+}
+
+/* Grey Minus Button */
+.bcpp-order-form .frm_remove_form_row,
+#form_bcpp-order-form .frm_remove_form_row,
+.frm_forms .frm_remove_form_row {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 32px !important;
+	height: 32px !important;
+	min-width: 32px !important;
+	max-width: 32px !important;
+	border-radius: 50% !important;
+	background-color: #64748B !important;
+	background: #64748B !important;
+	color: #fff !important;
+	font-size: 0 !important;
+	line-height: 1 !important;
+	text-align: center !important;
+	border: 0 !important;
+	cursor: pointer !important;
+	text-decoration: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1) !important;
+	vertical-align: middle !important;
+	box-sizing: border-box !important;
+	transition: background-color 0.15s ease, transform 0.1s ease !important;
+}
+
+/* Hide minus button on the first row so only + appears; row 2+ gets both + and - */
+.bcpp-order-form .frm_first_repeat .frm_remove_form_row,
+#form_bcpp-order-form .frm_first_repeat .frm_remove_form_row,
+.frm_forms .frm_first_repeat .frm_remove_form_row,
+.bcpp-order-form .frm_repeat_sec.frm_first_repeat .frm_remove_form_row,
+.bcpp-order-form .frm_repeat_both.frm_first_repeat .frm_remove_form_row,
+.frm_repeat_sec:first-of-type .frm_remove_form_row,
+.frm_repeat_both:first-of-type .frm_remove_form_row,
+[id^="frm_section_"][id$="-0"] .frm_remove_form_row {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.bcpp-order-form .frm_first_repeat .frm_add_form_row,
+#form_bcpp-order-form .frm_first_repeat .frm_add_form_row,
+.frm_forms .frm_first_repeat .frm_add_form_row,
+[id^="frm_section_"][id$="-0"] .frm_add_form_row {
+	display: inline-flex !important;
+	visibility: visible !important;
+}
+
+/* ==========================================================================
+   Payment Methods Module (Stripe, Venmo, Zelle)
+   ========================================================================== */
+.bcpp-payment-module {
+	margin-top: 16px;
+}
+
+.bcpp-payment-note {
+	margin: 14px 0 16px 0;
+	font-size: 13.5px;
+	line-height: 1.5;
+	color: #334155;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-weight: 400;
+}
+
+.bcpp-payment-tabs-header {
+	margin-bottom: 12px;
+}
+
+.bcpp-payment-tabs-label {
+	display: block;
+	font-size: 13.5px;
+	font-weight: 700;
+	color: #334155;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.bcpp-payment-tabs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.bcpp-payment-tab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	padding: 10px 12px;
+	background: #f8fafc;
+	border: 1.5px solid #cbd5e1;
+	border-radius: 6px;
+	font-size: 13.5px;
+	font-weight: 600;
+	color: #475569;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	outline: none;
+	user-select: none;
+	text-align: center;
+}
+
+.bcpp-payment-tab:hover {
+	background: #f1f5f9;
+	border-color: #94a3b8;
+	color: #1e293b;
+}
+
+.bcpp-payment-tab.active {
+	background: #ffffff;
+	border-color: #ea580c;
+	color: #ea580c;
+	box-shadow: 0 0 0 1px #ea580c, 0 2px 4px rgba(234, 88, 12, 0.08);
+}
+
+.bcpp-payment-tab[data-method="venmo"].active {
+	border-color: #008CFF;
+	color: #008CFF;
+	box-shadow: 0 0 0 1px #008CFF, 0 2px 4px rgba(0, 140, 255, 0.1);
+}
+
+.bcpp-payment-tab[data-method="zelle"].active {
+	border-color: #7414CA;
+	color: #7414CA;
+	box-shadow: 0 0 0 1px #7414CA, 0 2px 4px rgba(116, 20, 202, 0.1);
+}
+
+.bcpp-tab-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	flex-shrink: 0;
+}
+
+.bcpp-tab-title {
+	white-space: nowrap;
+}
+
+.bcpp-payment-panel {
+	animation: bcppFadeIn 0.25s ease forwards;
+}
+
+@keyframes bcppFadeIn {
+	from { opacity: 0; transform: translateY(4px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   Direct Payment Boxes (Venmo & Zelle)
+   ========================================================================== */
+.bcpp-direct-payment-box {
+	margin-top: 12px;
+	padding: 16px 18px;
+	background: #ffffff;
+	border: 1.5px solid #e2e8f0;
+	border-radius: 8px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+.bcpp-venmo-box {
+	border-color: #bae6fd;
+	background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 40px);
+}
+
+.bcpp-zelle-box {
+	border-color: #e9d5ff;
+	background: linear-gradient(180deg, #faf5ff 0%, #ffffff 40px);
+}
+
+.bcpp-direct-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 14px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e2e8f0;
+}
+
+.bcpp-direct-brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.bcpp-direct-logo-text {
+	font-size: 20px;
+	font-weight: 800;
+	letter-spacing: -0.5px;
+	line-height: 1;
+}
+
+.bcpp-venmo-logo {
+	color: #008CFF;
+	font-style: italic;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.bcpp-zelle-logo {
+	color: #7414CA;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.bcpp-direct-subtitle {
+	font-size: 13.5px;
+	font-weight: 600;
+	color: #64748b;
+}
+
+.bcpp-direct-amount-badge {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 4px 10px;
+	background: #f1f5f9;
+	border: 1px solid #cbd5e1;
+	border-radius: 6px;
+	font-size: 13px;
+	color: #334155;
+}
+
+.bcpp-direct-amount-badge strong {
+	font-size: 14px;
+	color: #0f172a;
+	font-weight: 700;
+}
+
+.bcpp-direct-content {
+	display: grid;
+	grid-template-columns: 145px 1fr;
+	gap: 18px;
+	align-items: start;
+}
+
+.bcpp-qr-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	padding: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.bcpp-qr-image {
+	width: 100%;
+	max-width: 130px;
+	height: auto;
+	max-height: 210px;
+	object-fit: contain;
+	border-radius: 4px;
+	display: block;
+}
+
+.bcpp-qr-caption {
+	margin-top: 6px;
+	font-size: 10.5px;
+	color: #64748b;
+	line-height: 1.2;
+}
+
+.bcpp-direct-details {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.bcpp-detail-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 13.5px;
+	color: #334155;
+}
+
+.bcpp-detail-lbl {
+	font-weight: 600;
+	color: #475569;
+	min-width: 130px;
+}
+
+.bcpp-detail-val {
+	font-size: 14px;
+	color: #0f172a;
+}
+
+.bcpp-copyable {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	background: #f8fafc;
+	padding: 2px 8px;
+	border-radius: 4px;
+	border: 1px solid #e2e8f0;
+}
+
+.bcpp-copy-btn {
+	background: transparent;
+	border: none;
+	font-size: 11px;
+	color: #2563eb;
+	cursor: pointer;
+	padding: 2px 4px;
+	border-radius: 3px;
+	font-weight: 600;
+	line-height: 1;
+	transition: all 0.15s ease;
+}
+
+.bcpp-copy-btn:hover {
+	background: #eff6ff;
+	color: #1d4ed8;
+}
+
+.bcpp-copy-btn.copied {
+	color: #16a34a !important;
+}
+
+.bcpp-instruction-steps {
+	margin-top: 4px;
+	padding: 10px 12px;
+	background: #f8fafc;
+	border-radius: 6px;
+	border: 1px solid #f1f5f9;
+}
+
+.bcpp-instruction-steps ol {
+	margin: 0;
+	padding-left: 18px;
+	font-size: 12.5px;
+	color: #334155;
+	line-height: 1.5;
+}
+
+.bcpp-instruction-steps li {
+	margin-bottom: 3px;
+}
+
+.bcpp-instruction-steps li:last-child {
+	margin-bottom: 0;
+}
+
+.bcpp-sender-field {
+	margin-top: 6px;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.bcpp-sender-field label {
+	font-size: 12.5px;
+	font-weight: 600;
+	color: #475569;
+}
+
+.bcpp-manual-input {
+	height: 36px;
+	padding: 6px 10px;
+	border: 1px solid #cbd5e1;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #1e293b;
+	background: #ffffff;
+	max-width: 320px;
+	transition: border-color 0.15s ease;
+}
+
+.bcpp-manual-input:focus {
+	border-color: #2563eb;
+	outline: none;
+	box-shadow: 0 0 0 1px #2563eb;
+}
+
+.bcpp-direct-footer {
+	margin-top: 12px;
+	padding-top: 8px;
+	border-top: 1px solid #f1f5f9;
+	font-size: 12px;
+	color: #64748b;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+@media screen and (max-width: 600px) {
+	.bcpp-payment-tabs {
+		grid-template-columns: 1fr;
+		gap: 6px;
+	}
+
+	.bcpp-direct-content {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	.bcpp-qr-wrapper {
+		max-width: 180px;
+		margin: 0 auto;
+	}
+
+	.bcpp-detail-item {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2px;
+	}
+
+	.bcpp-detail-lbl {
+		min-width: auto;
+	}
+}
+
+/* ==========================================================================
+   Stripe Payment Box Styling
+   ========================================================================== */
+.bcpp-stripe-payment-box {
+	margin-top: 12px;
+	padding: 14px 16px;
+	background: #ffffff;
+	border: 1px solid #e2e8f0;
+	border-radius: 6px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.bcpp-stripe-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #f1f5f9;
+}
+
+.bcpp-stripe-title {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-size: 13.5px;
+	font-weight: 700;
+	color: #1e293b;
+}
+
+.bcpp-lock-icon {
+	color: #ea580c;
+}
+
+.bcpp-card-icons {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.bcpp-badge-card {
+	display: inline-block;
+	font-size: 10.5px;
+	font-weight: 700;
+	color: #475569;
+	background: #f1f5f9;
+	padding: 2px 5px;
+	border-radius: 3px;
+	border: 1px solid #e2e8f0;
+	line-height: 1.2;
+}
+
+.bcpp-card-element-container {
+	padding: 11px 12px;
+	background: #fff;
+	border: 1px solid #cbd5e1;
+	border-radius: 4px;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bcpp-card-element-container.StripeElement--focus {
+	border-color: #ea580c;
+	box-shadow: 0 0 0 1px #ea580c;
+}
+
+.bcpp-card-element-container.StripeElement--invalid {
+	border-color: #dc2626;
+	box-shadow: 0 0 0 1px #dc2626;
+}
+
+.bcpp-card-errors {
+	margin-top: 8px;
+	padding: 8px 10px;
+	background: #fef2f2;
+	border: 1px solid #fecaca;
+	border-radius: 4px;
+	color: #b91c1c;
+	font-size: 12.5px;
+	line-height: 1.4;
+	font-weight: 500;
+}
+
+.bcpp-stripe-footer {
+	margin-top: 8px;
+	text-align: right;
+	font-size: 11.5px;
+	color: #64748b;
+}
+
+.frm_button_submit.bcpp-loading {
+	position: relative;
+	opacity: 0.85 !important;
+	cursor: not-allowed !important;
+	pointer-events: none;
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+}
+
+.frm_button_submit.bcpp-loading::after {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-left: 10px;
+	vertical-align: -2px;
+	border: 2px solid rgba(255, 255, 255, 0.35);
+	border-top-color: #ffffff;
+	border-radius: 50%;
+	animation: bcppSpin 0.75s linear infinite;
+	flex-shrink: 0;
+}
+
+/* Submit Notice */
+.bcpp-submit-notice {
+	margin-top: 14px;
+	padding: 12px 16px;
+	border-radius: 6px;
+	font-size: 14px;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.bcpp-submit-notice.bcpp-notice-processing {
+	background: #eff6ff;
+	border: 1px solid #bfdbfe;
+	color: #1e40af;
+}
+
+.bcpp-submit-notice.bcpp-notice-error {
+	background: #fef2f2;
+	border: 1px solid #fecaca;
+	color: #991b1b;
+}
+
+.bcpp-submit-notice.bcpp-notice-success {
+	background: #f0fdf4;
+	border: 1px solid #bbf7d0;
+	color: #166534;
+}
+
+.bcpp-spinner {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border: 2.5px solid rgba(37, 99, 235, 0.25);
+	border-top-color: #2563eb;
+	border-radius: 50%;
+	animation: bcppSpin 0.75s linear infinite;
+	flex-shrink: 0;
+}
+
+/* Field Validation Errors: Crisp 1.5px solid red border only */
+#form_bcpp-order-form input.bcpp-field-error,
+#form_bcpp-order-form select.bcpp-field-error,
+#form_bcpp-order-form textarea.bcpp-field-error,
+#form_bcpp-order-form input[type="text"].bcpp-field-error,
+#form_bcpp-order-form input[type="number"].bcpp-field-error,
+#form_bcpp-order-form input[type="email"].bcpp-field-error,
+#form_bcpp-order-form input[type="tel"].bcpp-field-error,
+#form_gift-certificates input.bcpp-field-error,
+#form_gift-certificates select.bcpp-field-error,
+#form_gift-certificates textarea.bcpp-field-error,
+.bcpp-order-form input.bcpp-field-error,
+.bcpp-order-form select.bcpp-field-error,
+.bcpp-order-form textarea.bcpp-field-error,
+.frm_forms input.bcpp-field-error,
+.frm_forms select.bcpp-field-error,
+.frm_forms textarea.bcpp-field-error,
+.frm_blank_field input,
+.frm_blank_field select,
+.frm_blank_field textarea,
+.frm_error_field input,
+.frm_error_field select,
+.frm_error_field textarea,
+.bcpp-card-element-container.bcpp-field-error,
+#bcpp_card_element.bcpp-field-error,
+#bcpp_gift_card_element.bcpp-field-error,
+.bcpp-field-error {
+	border: 1.5px solid #dc2626 !important;
+	border-color: #dc2626 !important;
+	outline: none !important;
+	box-shadow: none !important;
+	background-color: #ffffff !important;
+}
+
+/* Ensure container divs and labels never have red boxes or background tint */
+.frm_forms .frm_form_field.frm_blank_field,
+.frm_forms .frm_form_field.frm_error_field,
+.frm_blank_field,
+.frm_error_field,
+.frm_form_field.frm_blank_field,
+.frm_form_field.frm_error_field,
+#form_bcpp-order-form .frm_form_field.frm_blank_field,
+#form_bcpp-order-form .frm_form_field.frm_error_field {
+	border: none !important;
+	background: transparent !important;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+@keyframes bcppSpin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.bcpp-order-form .frm_add_form_row svg,
+.bcpp-order-form .frm_remove_form_row svg,
+#form_bcpp-order-form .frm_add_form_row svg,
+#form_bcpp-order-form .frm_remove_form_row svg,
+.frm_forms .frm_add_form_row svg,
+.frm_forms .frm_remove_form_row svg {
+	display: none !important;
+}
+
+.bcpp-order-form .frm_add_form_row::before,
+#form_bcpp-order-form .frm_add_form_row::before,
+.frm_forms .frm_add_form_row::before {
+	content: "+" !important;
+	font-size: 22px !important;
+	font-weight: 700 !important;
+	line-height: 1 !important;
+	color: #fff !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	text-align: center !important;
+	margin-top: 0px !important;
+	margin-left: 8px !important;
+}
+
+.bcpp-order-form .frm_remove_form_row::before,
+#form_bcpp-order-form .frm_remove_form_row::before,
+.frm_forms .frm_remove_form_row::before {
+	content: "–" !important;
+	font-size: 22px !important;
+	font-weight: 700 !important;
+	line-height: 1 !important;
+	color: #fff !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	text-align: center !important;
+	margin-top: 0px !important;
+	margin-left: 8px !important;
+}
+
+/* 11. "Additional" Section */
+.bcpp-addl-labels {
+	display: flex !important;
+	align-items: center !important;
+	width: 100% !important;
+	gap: 8px !important;
+	margin-top: 0 !important;
+	margin-bottom: 2px !important;
+	padding: 0 19px !important;
+	box-sizing: border-box !important;
+}
+
+.bcpp-addl-labels .bcpp-lbl-addl {
+	width: calc(28% + 8px) !important;
+	max-width: calc(28% + 8px) !important;
+	flex: 0 0 calc(28% + 8px) !important;
+	margin: 0 !important;
+}
+
+.bcpp-addl-labels .bcpp-lbl-addl h4 {
+	font-size: 13.5px !important;
+	font-weight: 700 !important;
+	color: #334155 !important;
+	margin: 0 !important;
+}
+
+.bcpp-addl-labels .bcpp-lbl-note {
+	width: calc(42% + 16px) !important;
+	max-width: calc(42% + 16px) !important;
+	flex: 0 0 calc(42% + 16px) !important;
+	margin: 0 !important;
+}
+
+.bcpp-addl-labels .bcpp-lbl-note h4 {
+	font-size: 13.5px !important;
+	font-weight: 700 !important;
+	color: #334155 !important;
+	margin: 0 !important;
+}
+
+.bcpp-addl-labels .bcpp-lbl-sub {
+	width: 9% !important;
+	max-width: 9% !important;
+	flex: 0 0 9% !important;
+	margin: 0 !important;
+	text-align: left !important;
+}
+
+.bcpp-addl-labels .bcpp-lbl-sub h4 {
+	font-size: 13.5px !important;
+	font-weight: 700 !important;
+	color: #334155 !important;
+	margin: 0 !important;
+	text-align: left !important;
+}
+
+.bcpp-order-form .bcpp-additional .bcpp-addl-services,
+#form_bcpp-order-form .bcpp-additional .bcpp-addl-services,
+.frm_forms .bcpp-additional .bcpp-addl-services {
+	width: calc(28% + 8px) !important;
+	max-width: calc(28% + 8px) !important;
+	flex: 0 0 calc(28% + 8px) !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: flex !important;
+	align-items: center !important;
+	height: 42px !important;
+}
+
+.bcpp-order-form .bcpp-addl-services .frm_opt_container,
+#form_bcpp-order-form .bcpp-addl-services .frm_opt_container,
+.frm_forms .bcpp-addl-services .frm_opt_container {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: nowrap !important;
+	gap: 16px !important;
+	align-items: center !important;
+	height: 42px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.bcpp-order-form .bcpp-addl-services .frm_checkbox,
+#form_bcpp-order-form .bcpp-addl-services .frm_checkbox,
+.frm_forms .bcpp-addl-services .frm_checkbox {
+	display: inline-flex !important;
+	align-items: center !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 42px !important;
+	line-height: 42px !important;
+	white-space: nowrap !important;
+}
+
+.bcpp-order-form .bcpp-addl-services .frm_checkbox label,
+#form_bcpp-order-form .bcpp-addl-services .frm_checkbox label,
+.frm_forms .bcpp-addl-services .frm_checkbox label {
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	color: #334155 !important;
+	cursor: pointer !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 8px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 42px !important;
+	line-height: 42px !important;
+}
+
+.bcpp-order-form .bcpp-addl-services input[type="checkbox"],
+.bcpp-order-form .bcpp-taxexempt input[type="checkbox"],
+#form_bcpp-order-form .bcpp-addl-services input[type="checkbox"],
+.frm_forms .bcpp-addl-services input[type="checkbox"] {
+	width: 17px !important;
+	height: 17px !important;
+	min-width: 17px !important;
+	border-radius: 3px !important;
+	border: 1px solid #94a3b8 !important;
+	cursor: pointer !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	vertical-align: middle !important;
+	position: relative !important;
+	top: 0 !important;
+}
+
+.bcpp-order-form .bcpp-additional .bcpp-addl-note,
+#form_bcpp-order-form .bcpp-additional .bcpp-addl-note,
+.frm_forms .bcpp-additional .bcpp-addl-note {
+	width: calc(42% + 16px) !important;
+	max-width: calc(42% + 16px) !important;
+	flex: 0 0 calc(42% + 16px) !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.bcpp-order-form .bcpp-additional .bcpp-addl-sub,
+#form_bcpp-order-form .bcpp-additional .bcpp-addl-sub,
+.frm_forms .bcpp-additional .bcpp-addl-sub {
+	width: 9% !important;
+	max-width: 9% !important;
+	flex: 0 0 9% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.bcpp-order-form .bcpp-additional .bcpp-addl-sub input,
+#form_bcpp-order-form .bcpp-additional .bcpp-addl-sub input,
+.frm_forms .bcpp-additional .bcpp-addl-sub input {
+	text-align: right !important;
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	color: #1e293b !important;
+	border: 1px solid #cbd5e1 !important;
+	border-radius: 4px !important;
+	background: #ffffff !important;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03) !important;
+	padding: 0 10px !important;
+	display: block !important;
+	width: 100% !important;
+	height: 42px !important;
+	line-height: 42px !important;
+	box-sizing: border-box !important;
+}
+
+/* Hide all backend/duplicate Formidable totals fields (managed inside custom Totals Box) */
+.bcpp-order-form .bcpp-promo,
+.bcpp-order-form .bcpp-subtotal,
+.bcpp-order-form .bcpp-discount,
+.bcpp-order-form .bcpp-discount-label,
+.bcpp-order-form .bcpp-taxexempt,
+.bcpp-order-form .bcpp-tax,
+.bcpp-order-form .bcpp-total,
+#form_bcpp-order-form .bcpp-promo,
+#form_bcpp-order-form .bcpp-subtotal,
+#form_bcpp-order-form .bcpp-discount,
+#form_bcpp-order-form .bcpp-discount-label,
+#form_bcpp-order-form .bcpp-taxexempt,
+#form_bcpp-order-form .bcpp-tax,
+#form_bcpp-order-form .bcpp-total,
+.frm_forms .bcpp-promo,
+.frm_forms .bcpp-subtotal,
+.frm_forms .bcpp-discount,
+.frm_forms .bcpp-discount-label,
+.frm_forms .bcpp-taxexempt,
+.frm_forms .bcpp-tax,
+.frm_forms .bcpp-total,
+#frm_field_71_container,
+#frm_field_72_container,
+#frm_field_73_container,
+#frm_field_74_container,
+#frm_field_75_container,
+#frm_field_76_container,
+#frm_field_78_container {
+	display: none !important;
+	visibility: hidden !important;
+	height: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+}
+
+/* 12. Bottom Section: Message & Totals Box */
+.bcpp-bottom-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	margin-top: 28px;
+	clear: both;
+}
+
+.bcpp-order-form .bcpp-message {
+	width: 48.5% !important;
+	margin-bottom: 0 !important;
+}
+
+.bcpp-order-form .bcpp-message .frm_primary_label {
+	display: block !important;
+	font-size: 13.5px !important;
+	font-weight: 700 !important;
+	color: #334155 !important;
+	margin-bottom: 6px !important;
+}
+
+.bcpp-order-form .bcpp-message textarea,
+#form_bcpp-order-form .bcpp-message textarea,
+.frm_forms .bcpp-message textarea {
+	height: 215px !important;
+	min-height: 215px !important;
+	resize: vertical !important;
+	padding: 12px !important;
+	line-height: 1.5 !important;
+}
+
+/* Totals Box Card */
+.bcpp-totals-box {
+	width: 48.5%;
+	background: #f8fafc;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	padding: 20px 24px;
+	box-sizing: border-box;
+}
+
+.bcpp-courtesy-banner {
+	font-size: 12.5px;
+	color: #64748b;
+	line-height: 1.4;
+	margin-bottom: 12px;
+}
+
+.bcpp-totals-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.bcpp-totals-table p {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.bcpp-totals-table tr td {
+	padding: 3px 0 !important;
+	vertical-align: middle;
+	border: none;
+}
+
+.bcpp-totals-table .bcpp-lbl-col {
+	font-size: 14px;
+	font-weight: 600;
+	color: #334155;
+	text-align: left;
+	width: 55%;
+}
+
+.bcpp-totals-table .bcpp-val-col {
+	text-align: right;
+	width: 45%;
+}
+
+/* Plain text display without input border boxes in Totals Card */
+.bcpp-order-form .bcpp-totals-table .bcpp-val-col input,
+#form_bcpp-order-form .bcpp-totals-table .bcpp-val-col input,
+.frm_forms .bcpp-totals-table .bcpp-val-col input {
+	text-align: right !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	color: #1e293b !important;
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	outline: none !important;
+	padding: 0 !important;
+	height: auto !important;
+	line-height: 1.4 !important;
+	width: auto !important;
+	display: inline-block !important;
+}
+
+/* Promo Code Input inside Totals Box (the ONLY input with a box) */
+.bcpp-order-form .bcpp-totals-table #promo_code1,
+#form_bcpp-order-form .bcpp-totals-table #promo_code1,
+.frm_forms .bcpp-totals-table #promo_code1 {
+	width: 100% !important;
+	height: 38px !important;
+	background: #fff !important;
+	border: 1px solid #cbd5e1 !important;
+	border-radius: 4px !important;
+	padding: 0 12px !important;
+	font-size: 13.5px !important;
+	color: #334155 !important;
+	margin: 2px 0 !important;
+	display: block !important;
+}
+
+/* Discount Green Highlight */
+.bcpp-totals-table .bcpp-discount-row {
+	display: none;
+}
+
+.bcpp-totals-table .bcpp-discount-row.active {
+	display: table-row;
+}
+
+.bcpp-totals-table .bcpp-discount-lbl {
+	color: #16a34a !important;
+	font-weight: 600 !important;
+}
+
+.bcpp-order-form .bcpp-totals-table .bcpp-discount-val input,
+#form_bcpp-order-form .bcpp-totals-table .bcpp-discount-val input,
+.frm_forms .bcpp-totals-table .bcpp-discount-val input {
+	color: #16a34a !important;
+	font-weight: 700 !important;
+}
+
+/* Tax Exempt Toggle */
+.bcpp-tax-exempt-wrapper {
+	margin: 2px 0 !important;
+	padding: 0 !important;
+}
+
+.bcpp-tax-exempt-wrapper label {
+	font-size: 13.5px;
+	font-weight: 400;
+	color: #334155;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	margin: 0 !important;
+}
+
+.bcpp-tax-exempt-wrapper input[type="checkbox"] {
+	width: 16px !important;
+	height: 16px !important;
+	min-width: 16px !important;
+	border: 1px solid #94a3b8 !important;
+	border-radius: 3px !important;
+	cursor: pointer;
+	margin: 0 !important;
+}
+
+/* Total Row */
+.bcpp-totals-table .bcpp-total-divider td {
+	border-top: 1px solid #e2e8f0;
+	padding-top: 10px !important;
+}
+
+.bcpp-totals-table .bcpp-total-lbl {
+	font-size: 16px !important;
+	font-weight: 700 !important;
+	color: #0f172a !important;
+	text-transform: uppercase;
+}
+
+.bcpp-order-form .bcpp-totals-table .bcpp-total-val input,
+#form_bcpp-order-form .bcpp-totals-table .bcpp-total-val input,
+.frm_forms .bcpp-totals-table .bcpp-total-val input {
+	font-size: 20px !important;
+	font-weight: 700 !important;
+	color: #0f172a !important;
+}
+
+/* 13. Submit Button (Positioned Bottom Right) */
+#frm_field_79_container,
+.bcpp-order-form #frm_field_79_container,
+#form_bcpp-order-form #frm_field_79_container,
+.frm_forms #frm_field_79_container,
+.frm_fields_container > #frm_field_79_container,
+.bcpp-order-form .frm_submit,
+#form_bcpp-order-form .frm_submit,
+.frm_forms .frm_submit,
+div.frm_submit {
+	width: 100% !important;
+	max-width: 100% !important;
+	grid-column: 1 / -1 !important;
+	flex: 0 0 100% !important;
+	display: flex !important;
+	justify-content: flex-end !important;
+	align-items: center !important;
+	text-align: right !important;
+	margin-top: 24px !important;
+	margin-bottom: 40px !important;
+	clear: both !important;
+	float: none !important;
+}
+
+#frm_field_79_container .frm_submit,
+.frm_submit.frm_flex {
+	width: 100% !important;
+	display: flex !important;
+	justify-content: flex-end !important;
+	align-items: center !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.bcpp-order-form .frm_submit .frm_button_submit,
+#form_bcpp-order-form .frm_submit .frm_button_submit,
+.frm_forms .frm_submit .frm_button_submit,
+.bcpp-order-form #send-message,
+#form_bcpp-order-form #send-message,
+.bcpp-order-form input[type="submit"],
+#form_bcpp-order-form input[type="submit"],
+.bcpp-order-form button[type="submit"],
+#form_bcpp-order-form button[type="submit"],
+.frm_button_submit.frm_final_submit,
+button.frm_button_submit {
+	margin-left: auto !important;
+	margin-right: 0 !important;
+	float: right !important;
+	background-color: #29ABDE !important;
+	background: #29ABDE !important;
+	color: #ffffff !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	padding: 10px 36px !important;
+	height: 42px !important;
+	border: none !important;
+	border-radius: 4px !important;
+	cursor: pointer !important;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
+	transition: background-color 0.15s ease !important;
+	display: inline-block !important;
+}
+
+.bcpp-order-form .frm_button_submit:hover,
+#form_bcpp-order-form .frm_button_submit:hover,
+.frm_forms .frm_button_submit:hover {
+	background-color: #0ea5e9 !important;
+	background: #0ea5e9 !important;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+	/* 1. Hide Desktop Column Headers */
+	.bcpp-labels-section,
+	.bcpp-addl-labels {
+		display: none !important;
+	}
+
+	/* Keep .desktoptext under .bcpp-section-title visible on mobile */
+	.bcpp-section-title .desktoptext,
+	.bcpp-section-title span,
+	#premium_papers .desktoptext,
+	#specialty_papers .desktoptext,
+	#additional_services .desktoptext,
+	#additional_papers .desktoptext {
+		display: inline !important;
+	}
+
+	/* 2. Show In-Card Field Labels */
+	.bcpp-order-form .bcpp-repeat .frm_primary_label,
+	#form_bcpp-order-form .bcpp-repeat .frm_primary_label,
+	.frm_forms .bcpp-repeat .frm_primary_label,
+	.bcpp-order-form .frm_repeat_sec .frm_primary_label,
+	.bcpp-order-form .frm_repeat_both .frm_primary_label {
+		display: block !important;
+		font-size: 13px !important;
+		font-weight: 600 !important;
+		color: #334155 !important;
+		margin: 0 0 6px 0 !important;
+		padding: 0 !important;
+		text-align: left !important;
+	}
+
+	/* 3. Repeater Cards as Natural Block Containers (No CSS Grid or row flex) */
+	.bcpp-order-form .bcpp-premium .frm_repeat_sec,
+	.bcpp-order-form .bcpp-premium .frm_repeat_both,
+	.bcpp-order-form .bcpp-specialty .frm_repeat_sec,
+	.bcpp-order-form .bcpp-specialty .frm_repeat_both,
+	.bcpp-order-form .bcpp-additional .frm_repeat_sec,
+	.bcpp-order-form .bcpp-additional .frm_repeat_both,
+	#form_bcpp-order-form .bcpp-premium .frm_repeat_sec,
+	#form_bcpp-order-form .bcpp-premium .frm_repeat_both,
+	#form_bcpp-order-form .bcpp-specialty .frm_repeat_sec,
+	#form_bcpp-order-form .bcpp-specialty .frm_repeat_both,
+	#form_bcpp-order-form .bcpp-additional .frm_repeat_sec,
+	#form_bcpp-order-form .bcpp-additional .frm_repeat_both,
+	.frm_forms .bcpp-premium .frm_repeat_sec,
+	.frm_forms .bcpp-premium .frm_repeat_both,
+	.frm_forms .bcpp-specialty .frm_repeat_sec,
+	.frm_forms .bcpp-specialty .frm_repeat_both,
+	.frm_forms .bcpp-additional .frm_repeat_sec,
+	.frm_forms .bcpp-additional .frm_repeat_both,
+	.frm_repeat_sec,
+	.frm_repeat_both {
+		display: block !important;
+		width: 100% !important;
+		height: auto !important;
+		min-height: 0 !important;
+		padding: 16px !important;
+		margin-top: 10px !important;
+		margin-bottom: 16px !important;
+		background: #ffffff !important;
+		border: 1px solid #e2e8f0 !important;
+		border-radius: 8px !important;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+		box-sizing: border-box !important;
+		overflow: hidden !important;
+		clear: both !important;
+	}
+
+	/* 4. Every Field Stacks Block-by-Block at 100% Full Width */
+	.bcpp-order-form .frm_repeat_sec .frm_form_field,
+	.bcpp-order-form .frm_repeat_both .frm_form_field,
+	#form_bcpp-order-form .frm_repeat_sec .frm_form_field,
+	#form_bcpp-order-form .frm_repeat_both .frm_form_field,
+	.frm_forms .frm_repeat_sec .frm_form_field,
+	.frm_forms .frm_repeat_both .frm_form_field,
+	.frm_repeat_sec .frm_form_field:not(.frm_repeat_buttons),
+	.frm_repeat_both .frm_form_field:not(.frm_repeat_buttons),
+	.bcpp-col-file,
+	.bcpp-col-border,
+	.bcpp-col-size,
+	.bcpp-col-paper,
+	.bcpp-col-amt,
+	.bcpp-col-sub,
+	.bcpp-addl-services,
+	.bcpp-addl-note,
+	.bcpp-addl-sub {
+		display: block !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 100% !important;
+		flex: none !important;
+		grid-column: auto !important;
+		grid-column-start: auto !important;
+		float: none !important;
+		clear: both !important;
+		margin: 0 0 12px 0 !important;
+		padding: 0 !important;
+		position: static !important;
+		box-sizing: border-box !important;
+	}
+
+	/* Inputs & Selects full width */
+	.bcpp-order-form .frm_repeat_sec input,
+	.bcpp-order-form .frm_repeat_sec select,
+	.bcpp-order-form .frm_repeat_both input,
+	.bcpp-order-form .frm_repeat_both select,
+	#form_bcpp-order-form .frm_repeat_sec input,
+	#form_bcpp-order-form .frm_repeat_sec select,
+	#form_bcpp-order-form .frm_repeat_both input,
+	#form_bcpp-order-form .frm_repeat_both select {
+		display: block !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		min-width: 100% !important;
+		height: 42px !important;
+		box-sizing: border-box !important;
+	}
+
+	/* Sub Total in Repeater cards */
+	.bcpp-order-form .frm_repeat_sec .bcpp-col-sub input,
+	.bcpp-order-form .frm_repeat_both .bcpp-addl-sub input {
+		text-align: left !important;
+	}
+
+	/* Additional Checkboxes */
+	.bcpp-addl-services .frm_opt_container {
+		display: flex !important;
+		flex-wrap: wrap !important;
+		gap: 10px 16px !important;
+		height: auto !important;
+		margin-top: 4px !important;
+	}
+
+	/* Action Buttons Row at the Bottom */
+	.bcpp-order-form .frm_repeat_buttons,
+	#form_bcpp-order-form .frm_repeat_buttons,
+	.frm_forms .frm_repeat_buttons,
+	.bcpp-repeat-buttons-col {
+		display: flex !important;
+		flex-direction: row !important;
+		justify-content: flex-end !important;
+		align-items: center !important;
+		width: 100% !important;
+		max-width: 100% !important;
+		flex: none !important;
+		grid-column: auto !important;
+		grid-column-start: auto !important;
+		margin: 8px 0 0 0 !important;
+		padding: 10px 0 0 0 !important;
+		border-top: 1px dashed #e2e8f0 !important;
+		float: none !important;
+		clear: both !important;
+		gap: 8px !important;
+		box-sizing: border-box !important;
+	}
+
+	.bcpp-order-form .frm_add_form_row,
+	.bcpp-order-form .frm_remove_form_row,
+	#form_bcpp-order-form .frm_add_form_row,
+	#form_bcpp-order-form .frm_remove_form_row,
+	.frm_forms .frm_add_form_row,
+	.frm_forms .frm_remove_form_row {
+		display: inline-flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+		width: 36px !important;
+		height: 36px !important;
+	}
+
+	/* Bottom Section */
+	.bcpp-bottom-section {
+		display: flex !important;
+		flex-direction: column !important;
+		gap: 20px !important;
+		width: 100% !important;
+	}
+
+	.bcpp-order-form .bcpp-message,
+	#form_bcpp-order-form .bcpp-message,
+	.bcpp-totals-box {
+		width: 100% !important;
+		max-width: 100% !important;
+		margin: 0 !important;
+	}
+}
+
+/* ==========================================================================
+   Gift Certificates Form Styles (#form_gift-certificates, #frm_form_17_container, #frm_form_12_container)
+   ========================================================================== */
+
+#frm_form_17_container,
+#frm_form_12_container,
+#form_gift-certificates,
+.bcpp-gift-form {
+	max-width: 900px !important;
+	width: 100% !important;
+	margin: 0 auto !important;
+	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif !important;
+	color: #334155 !important;
+}
+
+#form_gift-certificates .frm_fields_container {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	justify-content: space-between !important;
+	gap: 0 !important;
+	width: 100% !important;
+}
+
+/* Boxed TO and FROM Sections with Tabs */
+.bcpp-gift-box {
+	position: relative !important;
+	background-color: #f0ebe5 !important;
+	border: 1px solid #8c8981 !important;
+	border-radius: 0 !important;
+	padding: 22px 20px 20px 20px !important;
+	margin-top: 34px !important;
+	margin-bottom: 24px !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	flex: 0 0 100% !important;
+	box-sizing: border-box !important;
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: nowrap !important;
+	justify-content: space-between !important;
+	align-items: flex-start !important;
+	gap: 14px !important;
+	clear: both !important;
+}
+
+.bcpp-gift-tab {
+	position: absolute !important;
+	top: -24px !important;
+	left: -1px !important;
+	background-color: #808080 !important;
+	color: #ffffff !important;
+	font-size: 13px !important;
+	font-weight: 700 !important;
+	padding: 0 14px !important;
+	height: 24px !important;
+	line-height: 24px !important;
+	letter-spacing: 0.5px !important;
+	text-transform: uppercase !important;
+	box-sizing: border-box !important;
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	user-select: none !important;
+}
+
+/* 3-column inputs inside TO and FROM boxes */
+.with_frm_style .bcpp-gift-box .frm_form_field,
+.frm_style_formidable-style.with_frm_style .bcpp-gift-box .frm_form_field,
+.frm_style_formidable-style.with_frm_style .bcpp-gift-box .form-field,
+.frm_forms .bcpp-gift-box .frm_form_field,
+#form_gift-certificates .bcpp-gift-box .frm_form_field,
+.bcpp-gift-box .frm_form_field,
+.bcpp-gift-box .form-field,
+.bcpp-gift-box .frm4,
+.bcpp-gift-box div[class*="frm4"] {
+	width: 31.5% !important;
+	max-width: 31.5% !important;
+	min-width: 0 !important;
+	flex: 0 0 31.5% !important;
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	float: none !important;
+}
+
+#form_gift-certificates .bcpp-gift-box .frm_primary_label,
+.frm_forms .bcpp-gift-box .frm_primary_label,
+.bcpp-gift-box .frm_primary_label,
+#form_gift-certificates .frm_primary_label {
+	display: block !important;
+	font-size: 13.5px !important;
+	font-weight: 600 !important;
+	color: #4a4a4a !important;
+	margin-bottom: 6px !important;
+	line-height: 1.3 !important;
+}
+
+#form_gift-certificates .frm_required,
+.bcpp-gift-box .frm_required {
+	color: #e02424 !important;
+	font-weight: bold !important;
+	margin-left: 2px !important;
+}
+
+.bcpp-gift-box input[type="text"],
+.bcpp-gift-box input[type="email"],
+#form_gift-certificates input[type="text"],
+#form_gift-certificates input[type="email"],
+#form_gift-certificates input[type="number"] {
+	background-color: #ffffff !important;
+	border: 1px solid #c9c3bc !important;
+	border-radius: 4px !important;
+	height: 42px !important;
+	padding: 0 12px !important;
+	font-size: 14px !important;
+	color: #334155 !important;
+	box-sizing: border-box !important;
+	width: 100% !important;
+	display: block !important;
+	box-shadow: none !important;
+	transition: border-color 0.15s ease-in-out !important;
+}
+
+.bcpp-gift-box input:focus,
+#form_gift-certificates input:focus,
+#form_gift-certificates textarea:focus {
+	border-color: #29abde !important;
+	outline: 2px solid rgba(41, 171, 222, 0.2) !important;
+}
+
+/* Full width fields (Message, Amount) */
+#form_gift-certificates #frm_field_152_container,
+#form_gift-certificates #frm_field_153_container,
+#form_gift-certificates #frm_field_126_container,
+#form_gift-certificates #frm_field_127_container,
+#form_gift-certificates .frm12,
+#form_gift-certificates div[class*="frm12"] {
+	width: 100% !important;
+	max-width: 100% !important;
+	flex: 0 0 100% !important;
+	margin-bottom: 16px !important;
+	box-sizing: border-box !important;
+}
+
+#form_gift-certificates textarea {
+	background-color: #ffffff !important;
+	border: 1px solid #c9c3bc !important;
+	border-radius: 4px !important;
+	min-height: 110px !important;
+	height: auto !important;
+	padding: 10px 12px !important;
+	line-height: 1.5 !important;
+	font-size: 14px !important;
+	color: #334155 !important;
+	box-sizing: border-box !important;
+	width: 100% !important;
+	display: block !important;
+	box-shadow: none !important;
+}
+
+/* Gift Certificate Amount Radio Buttons */
+.bcpp-gift-amount-radios,
+#frm_field_153_container .frm_opt_container,
+#frm_field_127_container .frm_opt_container,
+#form_gift-certificates .horizontal_radio,
+#form_gift-certificates .frm_inline {
+	display: flex !important;
+	flex-direction: row !important;
+	flex-wrap: wrap !important;
+	align-items: center !important;
+	gap: 8px 16px !important;
+	margin-top: 6px !important;
+	margin-bottom: 12px !important;
+	padding: 10px 14px !important;
+	background: #ffffff !important;
+	border: 1px solid #c9c3bc !important;
+	border-radius: 4px !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
+}
+
+#form_gift-certificates .horizontal_radio .frm_primary_label,
+#form_gift-certificates .frm_inline .frm_primary_label {
+	width: 100% !important;
+	flex: 0 0 100% !important;
+	margin-bottom: 8px !important;
+}
+
+.bcpp-gift-amount-item,
+#frm_field_153_container .frm_radio,
+#frm_field_127_container .frm_radio {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 6px !important;
+	cursor: pointer !important;
+	margin: 0 !important;
+	padding: 4px 6px !important;
+	font-size: 14.5px !important;
+	font-weight: 600 !important;
+	color: #334155 !important;
+	user-select: none !important;
+	transition: color 0.15s ease, background 0.15s ease !important;
+	border-radius: 4px !important;
+}
+
+.bcpp-gift-amount-item:hover,
+#frm_field_153_container .frm_radio:hover,
+#frm_field_127_container .frm_radio:hover {
+	color: #29abde !important;
+	background: rgba(41, 171, 222, 0.06) !important;
+}
+
+.bcpp-gift-amount-item.is-selected {
+	color: #29abde !important;
+	background: rgba(41, 171, 222, 0.1) !important;
+}
+
+.bcpp-gift-amount-item input[type="radio"],
+#frm_field_153_container input[type="radio"],
+#frm_field_127_container input[type="radio"] {
+	width: 17px !important;
+	min-width: 17px !important;
+	max-width: 17px !important;
+	height: 17px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	cursor: pointer !important;
+	accent-color: #29abde !important;
+	vertical-align: middle !important;
+	display: inline-block !important;
+}
+
+.bcpp-gift-amount-item .bcpp-amount-label {
+	font-size: 14.5px !important;
+	font-weight: 600 !important;
+	color: inherit !important;
+	line-height: 1 !important;
+}
+
+/* Gift Summary Row & Totals Box */
+.bcpp-gift-payment-section {
+	width: 100% !important;
+	clear: both !important;
+	margin-top: 10px !important;
+}
+
+.bcpp-gift-section-title {
+	font-size: 17px !important;
+	font-weight: 700 !important;
+	color: #1e293b !important;
+	margin-top: 24px !important;
+	margin-bottom: 6px !important;
+	line-height: 1.4 !important;
+	clear: both !important;
+	display: block !important;
+	width: 100% !important;
+}
+
+.bcpp-gift-div-border {
+	width: 100% !important;
+	height: 1px !important;
+	border-bottom: 1px solid #cbd5e1 !important;
+	margin-top: 8px !important;
+	margin-bottom: 16px !important;
+	clear: both !important;
+	display: block !important;
+}
+
+.bcpp-gift-totals-box {
+	margin-top: 10px !important;
+	margin-bottom: 20px !important;
+	padding: 18px 20px !important;
+	background: #f8fafc !important;
+	border: 1px solid #e2e8f0 !important;
+	border-radius: 6px !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+	width: 100% !important;
+}
+
+.bcpp-gift-summary-row {
+	display: flex !important;
+	justify-content: space-between !important;
+	align-items: center !important;
+	padding: 12px 14px !important;
+	background: #ffffff !important;
+	border: 1px solid #cbd5e1 !important;
+	border-radius: 4px !important;
+	margin-bottom: 16px !important;
+}
+
+.bcpp-gift-summary-lbl {
+	font-size: 15px !important;
+	font-weight: 700 !important;
+	color: #1e293b !important;
+}
+
+.bcpp-gift-summary-val {
+	font-size: 18px !important;
+	font-weight: 700 !important;
+	color: #059669 !important;
+	font-family: monospace, sans-serif !important;
+}
+
+/* Submit button for Gift form */
+#frm_field_157_container,
+#frm_field_129_container,
+#form_gift-certificates .frm_submit {
+	margin-top: 10px !important;
+	margin-bottom: 20px !important;
+	width: 100% !important;
+}
+
+#form_gift-certificates .frm_button_submit {
+	background-color: #29abde !important;
+	color: #ffffff !important;
+	font-size: 16px !important;
+	font-weight: 700 !important;
+	height: 48px !important;
+	padding: 0 36px !important;
+	border: none !important;
+	border-radius: 4px !important;
+	cursor: pointer !important;
+	transition: background-color 0.15s ease !important;
+}
+
+#form_gift-certificates .frm_button_submit:hover {
+	background-color: #1e8bb5 !important;
+}
+
+/* Responsive Gift Form */
+@media screen and (max-width: 768px) {
+	.bcpp-gift-box {
+		flex-direction: column !important;
+		gap: 14px !important;
+		padding: 20px 14px 14px 14px !important;
+	}
+
+	.with_frm_style .bcpp-gift-box .frm_form_field,
+	.frm_style_formidable-style.with_frm_style .bcpp-gift-box .frm_form_field,
+	.frm_style_formidable-style.with_frm_style .bcpp-gift-box .form-field,
+	.frm_forms .bcpp-gift-box .frm_form_field,
+	#form_gift-certificates .bcpp-gift-box .frm_form_field,
+	.bcpp-gift-box .frm_form_field,
+	.bcpp-gift-box .form-field,
+	.bcpp-gift-box .frm4,
+	.bcpp-gift-box div[class*="frm4"],
+	#form_gift-certificates .bcpp-gift-box .frm_form_field {
+		width: 100% !important;
+		max-width: 100% !important;
+		flex: 0 0 100% !important;
+		margin-bottom: 0 !important;
+	}
+}
+
