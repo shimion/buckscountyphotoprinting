@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://buckscountyphotoprinting.com/sitemap.xml
+Disallow: /
