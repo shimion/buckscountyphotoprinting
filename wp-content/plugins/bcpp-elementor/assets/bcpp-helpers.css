@@ -69,3 +69,31 @@ figcaption, .widget-image-caption { font-style: normal; }
 .bcpp-download:hover { border-color: var(--e-global-color-accent, #b5532a) !important; }
 .bcpp-download .elementor-widget-text-editor p { margin: 0; }
 .bcpp-download > .e-con { flex: 1 1 0% !important; min-width: 0; }
+
+/* Form pages: Formidable forms fill their column (the plugin centers them at 1040px / 900px) */
+.bcpp-page-form .frm_forms, .bcpp-page-form #form_bcpp-order-form, .bcpp-page-form #form_gift-certificates,
+.bcpp-page-form #frm_form_17_container, .bcpp-page-form .bcpp-order-form {
+	max-width: 100% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.bcpp-page-form .frm-show-form .bcpp-div-border { display: none !important; }
+.bcpp-page-form .frm_forms textarea { height: auto !important; }
+/* Elementor Pro form (Contact): focus ring and textarea size like the other forms */
+.bcpp-elementor-form .elementor-field-textual:hover { border-color: var(--e-global-color-secondary, #5A544B) !important; }
+.bcpp-elementor-form .elementor-field-textual:focus { border-color: var(--e-global-color-accent, #A8430D) !important; box-shadow: 0 0 0 3px rgba(168, 67, 13, .18) !important; outline: none; }
+.bcpp-elementor-form textarea.elementor-field-textual { min-height: 160px; }
+.bcpp-elementor-form .elementor-mark-required .elementor-field-label:after { color: var(--e-global-color-accent, #A8430D); }
+
+/* Header menu: the top-level item stays highlighted while you are on one of its dropdown pages (Bill, Oct 17) */
+.elementor-nav-menu--main .elementor-nav-menu > li.current-menu-ancestor > a.elementor-item,
+.elementor-nav-menu--main .elementor-nav-menu > li.current-menu-parent > a.elementor-item,
+.elementor-nav-menu--main .elementor-nav-menu > li.current_page_ancestor > a.elementor-item {
+	color: var(--e-global-color-accent, #A8430D) !important;
+	fill: var(--e-global-color-accent, #A8430D) !important;
+}
+
+/* Icon + title rows (service cards, feature cards): the icon never shrinks, so the gap to the title is the same
+   whether the title is short or wraps onto two lines (Bill, Oct 23) */
+.e-con:has(> .elementor-widget-icon:first-child + .elementor-widget-heading:last-child) > .elementor-widget-icon { flex: 0 0 auto !important; width: auto !important; max-width: none !important; }
+.e-con:has(> .elementor-widget-icon:first-child + .elementor-widget-heading:last-child) > .elementor-widget-heading { flex: 1 1 0% !important; min-width: 0; }

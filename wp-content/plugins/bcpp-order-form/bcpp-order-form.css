@@ -3,7 +3,7 @@
  * Exact match to the target mockup design.
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+/* Fonts come from the site (Elementor global fonts: Inter for text, Fraunces for headings). */
 
 /* Base Form Container */
 .frm_forms,
@@ -14,9 +14,9 @@
 	max-width: 1040px !important;
 	width: 100% !important;
 	margin: 0 auto !important;
-	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif !important;
-	color: #334155 !important;
-	--text-color-disabled: #334155 !important;
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+	color: #2B2824 !important;
+	--text-color-disabled: #2B2824 !important;
 	box-sizing: border-box !important;
 }
 
@@ -24,21 +24,21 @@
 #form_bcpp-order-form *,
 .frm_forms * {
 	box-sizing: border-box !important;
-	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif !important;
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 /* 1. Top Notice */
 .bcpp-top-notice {
 	font-size: 13.5px;
 	font-style: italic;
-	color: #555;
+	color: #5A544B;
 	margin-bottom: 16px;
 	line-height: 1.5;
 	width: 100%;
 }
 
 .bcpp-top-notice a {
-	color: #2563eb;
+	color: #A8430D;
 	text-decoration: underline;
 }
 
@@ -49,8 +49,9 @@
 }
 
 .bcpp-header-title h1,
+.bcpp-header-title p,
 .bcpp-header-title #order_form_abc {
-	color: #29ABDE;
+	color: #A8430D;
 	font-size: 30px;
 	font-weight: 700;
 	margin: 0;
@@ -62,7 +63,7 @@
 .bcpp-section-title {
 	font-size: 17px;
 	font-weight: 700;
-	color: #1e293b;
+	color: #1C1A17;
 	margin-top: 24px;
 	margin-bottom: 6px;
 	line-height: 1.4;
@@ -78,14 +79,14 @@
 #additional_papers .desktoptext {
 	font-size: 13.5px !important;
 	font-weight: 400 !important;
-	color: #4c4c4c !important;
+	color: #5A544B !important;
 	margin-left: 6px !important;
 }
 
 .bcpp-div-border {
 	width: 100% !important;
 	height: 1px !important;
-	border-bottom: 1px solid #cbd5e1 !important;
+	border-bottom: 1px solid #C9C1B4 !important;
 	margin-top: 8px !important;
 	margin-bottom: 16px !important;
 	clear: both !important;
@@ -94,12 +95,12 @@
 
 /* 4. Instruction Banner */
 .bcpp-instruction-banner {
-	background: #f8fafc;
-	border: 1px solid #e2e8f0;
+	background: #FAF8F4;
+	border: 1px solid #E3DCD0;
 	border-radius: 6px;
 	padding: 12px 18px;
 	font-size: 13.5px;
-	color: #334155;
+	color: #2B2824;
 	line-height: 1.6;
 	margin: 18px 0 24px 0;
 	clear: both;
@@ -108,7 +109,7 @@
 }
 
 .bcpp-instruction-banner a {
-	color: #2563eb;
+	color: #A8430D;
 	text-decoration: underline;
 }
 
@@ -119,7 +120,7 @@
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background-color: #64748b;
+	background-color: #5A544B;
 	color: #fff;
 	font-size: 14px;
 	font-weight: 700;
@@ -152,10 +153,10 @@
 	min-width: 100% !important;
 	height: 42px !important;
 	padding: 0 12px !important;
-	border: 1px solid #cbd5e1 !important;
+	border: 1px solid #C9C1B4 !important;
 	border-radius: 4px !important;
 	font-size: 14px !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	background-color: #fff !important;
 	box-shadow: none !important;
 	box-sizing: border-box !important;
@@ -177,7 +178,7 @@
 
 .bcpp-order-form input::placeholder,
 .bcpp-order-form textarea::placeholder {
-	color: #94a3b8 !important;
+	color: #8C8478 !important;
 	opacity: 1 !important;
 }
 
@@ -187,8 +188,8 @@
 #form_bcpp-order-form input:focus,
 #form_bcpp-order-form select:focus,
 #form_bcpp-order-form textarea:focus {
-	border-color: #29abde !important;
-	outline: 2px solid rgba(41, 171, 222, 0.2) !important;
+	border-color: #A8430D !important;
+	outline: 2px solid rgba(168, 67, 13, 0.2) !important;
 }
 
 /* 6. Fields Container (Flexbox) */
@@ -219,7 +220,7 @@
 	display: block !important;
 	font-size: 13.5px !important;
 	font-weight: 600 !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	margin-bottom: 6px !important;
 	padding: 0 !important;
 }
@@ -337,7 +338,7 @@
 .bcpp-labels-section h4 {
 	font-size: 13.5px !important;
 	font-weight: 700 !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	margin: 0 !important;
 	text-align: left !important;
 }
@@ -412,7 +413,7 @@
 	margin-top: 10px !important;
 	margin-bottom: 10px !important;
 	padding: 14px 18px !important;
-	border: 1px solid #e2e8f0 !important;
+	border: 1px solid #E3DCD0 !important;
 	border-radius: 6px !important;
 	background-color: #ffffff !important;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02) !important;
@@ -476,8 +477,8 @@
 	text-align: right !important;
 	font-weight: 600 !important;
 	font-size: 14px !important;
-	color: #1e293b !important;
-	border: 1px solid #cbd5e1 !important;
+	color: #1C1A17 !important;
+	border: 1px solid #C9C1B4 !important;
 	border-radius: 4px !important;
 	background: #ffffff !important;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03) !important;
@@ -540,8 +541,8 @@
 	min-width: 32px !important;
 	max-width: 32px !important;
 	border-radius: 50% !important;
-	background-color: #F26522 !important;
-	background: #F26522 !important;
+	background-color: #A8430D !important;
+	background: #A8430D !important;
 	color: #fff !important;
 	font-size: 0 !important;
 	line-height: 1 !important;
@@ -560,8 +561,8 @@
 .bcpp-order-form .frm_add_form_row:hover,
 #form_bcpp-order-form .frm_add_form_row:hover,
 .frm_forms .frm_add_form_row:hover {
-	background-color: #EA580C !important;
-	background: #EA580C !important;
+	background-color: #A8430D !important;
+	background: #A8430D !important;
 }
 
 /* Grey Minus Button */
@@ -576,8 +577,8 @@
 	min-width: 32px !important;
 	max-width: 32px !important;
 	border-radius: 50% !important;
-	background-color: #64748B !important;
-	background: #64748B !important;
+	background-color: #5A544B !important;
+	background: #5A544B !important;
 	color: #fff !important;
 	font-size: 0 !important;
 	line-height: 1 !important;
@@ -625,8 +626,8 @@
 	margin: 14px 0 16px 0;
 	font-size: 13.5px;
 	line-height: 1.5;
-	color: #334155;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	color: #2B2824;
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 	font-weight: 400;
 }
 
@@ -638,7 +639,7 @@
 	display: block;
 	font-size: 13.5px;
 	font-weight: 700;
-	color: #334155;
+	color: #2B2824;
 	margin-bottom: 8px;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
@@ -656,12 +657,12 @@
 	justify-content: center;
 	gap: 8px;
 	padding: 10px 12px;
-	background: #f8fafc;
-	border: 1.5px solid #cbd5e1;
+	background: #FAF8F4;
+	border: 1.5px solid #C9C1B4;
 	border-radius: 6px;
 	font-size: 13.5px;
 	font-weight: 600;
-	color: #475569;
+	color: #5A544B;
 	cursor: pointer;
 	transition: all 0.2s ease;
 	outline: none;
@@ -670,16 +671,16 @@
 }
 
 .bcpp-payment-tab:hover {
-	background: #f1f5f9;
-	border-color: #94a3b8;
-	color: #1e293b;
+	background: #F2EDE4;
+	border-color: #8C8478;
+	color: #1C1A17;
 }
 
 .bcpp-payment-tab.active {
 	background: #ffffff;
-	border-color: #ea580c;
-	color: #ea580c;
-	box-shadow: 0 0 0 1px #ea580c, 0 2px 4px rgba(234, 88, 12, 0.08);
+	border-color: #A8430D;
+	color: #A8430D;
+	box-shadow: 0 0 0 1px #A8430D, 0 2px 4px rgba(168, 67, 13, 0.08);
 }
 
 .bcpp-payment-tab[data-method="venmo"].active {
@@ -722,7 +723,7 @@
 	margin-top: 12px;
 	padding: 16px 18px;
 	background: #ffffff;
-	border: 1.5px solid #e2e8f0;
+	border: 1.5px solid #E3DCD0;
 	border-radius: 8px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
 }
@@ -743,7 +744,7 @@
 	align-items: center;
 	margin-bottom: 14px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #e2e8f0;
+	border-bottom: 1px solid #E3DCD0;
 }
 
 .bcpp-direct-brand {
@@ -762,18 +763,18 @@
 .bcpp-venmo-logo {
 	color: #008CFF;
 	font-style: italic;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .bcpp-zelle-logo {
 	color: #7414CA;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 .bcpp-direct-subtitle {
 	font-size: 13.5px;
 	font-weight: 600;
-	color: #64748b;
+	color: #5A544B;
 }
 
 .bcpp-direct-amount-badge {
@@ -781,16 +782,16 @@
 	align-items: center;
 	gap: 6px;
 	padding: 4px 10px;
-	background: #f1f5f9;
-	border: 1px solid #cbd5e1;
+	background: #F2EDE4;
+	border: 1px solid #C9C1B4;
 	border-radius: 6px;
 	font-size: 13px;
-	color: #334155;
+	color: #2B2824;
 }
 
 .bcpp-direct-amount-badge strong {
 	font-size: 14px;
-	color: #0f172a;
+	color: #1C1A17;
 	font-weight: 700;
 }
 
@@ -807,7 +808,7 @@
 	align-items: center;
 	text-align: center;
 	background: #ffffff;
-	border: 1px solid #e2e8f0;
+	border: 1px solid #E3DCD0;
 	border-radius: 8px;
 	padding: 8px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
@@ -826,7 +827,7 @@
 .bcpp-qr-caption {
 	margin-top: 6px;
 	font-size: 10.5px;
-	color: #64748b;
+	color: #5A544B;
 	line-height: 1.2;
 }
 
@@ -841,35 +842,35 @@
 	align-items: center;
 	gap: 8px;
 	font-size: 13.5px;
-	color: #334155;
+	color: #2B2824;
 }
 
 .bcpp-detail-lbl {
 	font-weight: 600;
-	color: #475569;
+	color: #5A544B;
 	min-width: 130px;
 }
 
 .bcpp-detail-val {
 	font-size: 14px;
-	color: #0f172a;
+	color: #1C1A17;
 }
 
 .bcpp-copyable {
 	display: inline-flex;
 	align-items: center;
 	gap: 6px;
-	background: #f8fafc;
+	background: #FAF8F4;
 	padding: 2px 8px;
 	border-radius: 4px;
-	border: 1px solid #e2e8f0;
+	border: 1px solid #E3DCD0;
 }
 
 .bcpp-copy-btn {
 	background: transparent;
 	border: none;
 	font-size: 11px;
-	color: #2563eb;
+	color: #A8430D;
 	cursor: pointer;
 	padding: 2px 4px;
 	border-radius: 3px;
@@ -879,7 +880,7 @@
 }
 
 .bcpp-copy-btn:hover {
-	background: #eff6ff;
+	background: #FBEEE4;
 	color: #1d4ed8;
 }
 
@@ -890,16 +891,16 @@
 .bcpp-instruction-steps {
 	margin-top: 4px;
 	padding: 10px 12px;
-	background: #f8fafc;
+	background: #FAF8F4;
 	border-radius: 6px;
-	border: 1px solid #f1f5f9;
+	border: 1px solid #F2EDE4;
 }
 
 .bcpp-instruction-steps ol {
 	margin: 0;
 	padding-left: 18px;
 	font-size: 12.5px;
-	color: #334155;
+	color: #2B2824;
 	line-height: 1.5;
 }
 
@@ -921,33 +922,33 @@
 .bcpp-sender-field label {
 	font-size: 12.5px;
 	font-weight: 600;
-	color: #475569;
+	color: #5A544B;
 }
 
 .bcpp-manual-input {
 	height: 36px;
 	padding: 6px 10px;
-	border: 1px solid #cbd5e1;
+	border: 1px solid #C9C1B4;
 	border-radius: 4px;
 	font-size: 13px;
-	color: #1e293b;
+	color: #1C1A17;
 	background: #ffffff;
 	max-width: 320px;
 	transition: border-color 0.15s ease;
 }
 
 .bcpp-manual-input:focus {
-	border-color: #2563eb;
+	border-color: #A8430D;
 	outline: none;
-	box-shadow: 0 0 0 1px #2563eb;
+	box-shadow: 0 0 0 1px #A8430D;
 }
 
 .bcpp-direct-footer {
 	margin-top: 12px;
 	padding-top: 8px;
-	border-top: 1px solid #f1f5f9;
+	border-top: 1px solid #F2EDE4;
 	font-size: 12px;
-	color: #64748b;
+	color: #5A544B;
 	display: flex;
 	align-items: center;
 	gap: 6px;
@@ -987,7 +988,7 @@
 	margin-top: 12px;
 	padding: 14px 16px;
 	background: #ffffff;
-	border: 1px solid #e2e8f0;
+	border: 1px solid #E3DCD0;
 	border-radius: 6px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
@@ -998,7 +999,7 @@
 	align-items: center;
 	margin-bottom: 10px;
 	padding-bottom: 8px;
-	border-bottom: 1px solid #f1f5f9;
+	border-bottom: 1px solid #F2EDE4;
 }
 
 .bcpp-stripe-title {
@@ -1007,11 +1008,11 @@
 	gap: 6px;
 	font-size: 13.5px;
 	font-weight: 700;
-	color: #1e293b;
+	color: #1C1A17;
 }
 
 .bcpp-lock-icon {
-	color: #ea580c;
+	color: #A8430D;
 }
 
 .bcpp-card-icons {
@@ -1024,25 +1025,25 @@
 	display: inline-block;
 	font-size: 10.5px;
 	font-weight: 700;
-	color: #475569;
-	background: #f1f5f9;
+	color: #5A544B;
+	background: #F2EDE4;
 	padding: 2px 5px;
 	border-radius: 3px;
-	border: 1px solid #e2e8f0;
+	border: 1px solid #E3DCD0;
 	line-height: 1.2;
 }
 
 .bcpp-card-element-container {
 	padding: 11px 12px;
 	background: #fff;
-	border: 1px solid #cbd5e1;
+	border: 1px solid #C9C1B4;
 	border-radius: 4px;
 	transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .bcpp-card-element-container.StripeElement--focus {
-	border-color: #ea580c;
-	box-shadow: 0 0 0 1px #ea580c;
+	border-color: #A8430D;
+	box-shadow: 0 0 0 1px #A8430D;
 }
 
 .bcpp-card-element-container.StripeElement--invalid {
@@ -1066,7 +1067,7 @@
 	margin-top: 8px;
 	text-align: right;
 	font-size: 11.5px;
-	color: #64748b;
+	color: #5A544B;
 }
 
 .frm_button_submit.bcpp-loading {
@@ -1107,7 +1108,7 @@
 }
 
 .bcpp-submit-notice.bcpp-notice-processing {
-	background: #eff6ff;
+	background: #FBEEE4;
 	border: 1px solid #bfdbfe;
 	color: #1e40af;
 }
@@ -1128,8 +1129,8 @@
 	display: inline-block;
 	width: 18px;
 	height: 18px;
-	border: 2.5px solid rgba(37, 99, 235, 0.25);
-	border-top-color: #2563eb;
+	border: 2.5px solid rgba(168, 67, 13, 0.25);
+	border-top-color: #A8430D;
 	border-radius: 50%;
 	animation: bcppSpin 0.75s linear infinite;
 	flex-shrink: 0;
@@ -1254,7 +1255,7 @@
 .bcpp-addl-labels .bcpp-lbl-addl h4 {
 	font-size: 13.5px !important;
 	font-weight: 700 !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	margin: 0 !important;
 }
 
@@ -1268,7 +1269,7 @@
 .bcpp-addl-labels .bcpp-lbl-note h4 {
 	font-size: 13.5px !important;
 	font-weight: 700 !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	margin: 0 !important;
 }
 
@@ -1283,7 +1284,7 @@
 .bcpp-addl-labels .bcpp-lbl-sub h4 {
 	font-size: 13.5px !important;
 	font-weight: 700 !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	margin: 0 !important;
 	text-align: left !important;
 }
@@ -1331,7 +1332,7 @@
 .frm_forms .bcpp-addl-services .frm_checkbox label {
 	font-size: 14px !important;
 	font-weight: 500 !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	cursor: pointer !important;
 	display: inline-flex !important;
 	align-items: center !important;
@@ -1350,7 +1351,7 @@
 	height: 17px !important;
 	min-width: 17px !important;
 	border-radius: 3px !important;
-	border: 1px solid #94a3b8 !important;
+	border: 1px solid #8C8478 !important;
 	cursor: pointer !important;
 	margin: 0 !important;
 	padding: 0 !important;
@@ -1385,8 +1386,8 @@
 	text-align: right !important;
 	font-weight: 600 !important;
 	font-size: 14px !important;
-	color: #1e293b !important;
-	border: 1px solid #cbd5e1 !important;
+	color: #1C1A17 !important;
+	border: 1px solid #C9C1B4 !important;
 	border-radius: 4px !important;
 	background: #ffffff !important;
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.03) !important;
@@ -1454,7 +1455,7 @@
 	display: block !important;
 	font-size: 13.5px !important;
 	font-weight: 700 !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	margin-bottom: 6px !important;
 }
 
@@ -1471,8 +1472,8 @@
 /* Totals Box Card */
 .bcpp-totals-box {
 	width: 48.5%;
-	background: #f8fafc;
-	border: 1px solid #e2e8f0;
+	background: #FAF8F4;
+	border: 1px solid #E3DCD0;
 	border-radius: 8px;
 	padding: 20px 24px;
 	box-sizing: border-box;
@@ -1480,7 +1481,7 @@
 
 .bcpp-courtesy-banner {
 	font-size: 12.5px;
-	color: #64748b;
+	color: #5A544B;
 	line-height: 1.4;
 	margin-bottom: 12px;
 }
@@ -1504,7 +1505,7 @@
 .bcpp-totals-table .bcpp-lbl-col {
 	font-size: 14px;
 	font-weight: 600;
-	color: #334155;
+	color: #2B2824;
 	text-align: left;
 	width: 55%;
 }
@@ -1521,7 +1522,7 @@
 	text-align: right !important;
 	font-size: 14px !important;
 	font-weight: 600 !important;
-	color: #1e293b !important;
+	color: #1C1A17 !important;
 	background: transparent !important;
 	border: none !important;
 	box-shadow: none !important;
@@ -1540,11 +1541,11 @@
 	width: 100% !important;
 	height: 38px !important;
 	background: #fff !important;
-	border: 1px solid #cbd5e1 !important;
+	border: 1px solid #C9C1B4 !important;
 	border-radius: 4px !important;
 	padding: 0 12px !important;
 	font-size: 13.5px !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	margin: 2px 0 !important;
 	display: block !important;
 }
@@ -1579,7 +1580,7 @@
 .bcpp-tax-exempt-wrapper label {
 	font-size: 13.5px;
 	font-weight: 400;
-	color: #334155;
+	color: #2B2824;
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
@@ -1591,7 +1592,7 @@
 	width: 16px !important;
 	height: 16px !important;
 	min-width: 16px !important;
-	border: 1px solid #94a3b8 !important;
+	border: 1px solid #8C8478 !important;
 	border-radius: 3px !important;
 	cursor: pointer;
 	margin: 0 !important;
@@ -1599,14 +1600,14 @@
 
 /* Total Row */
 .bcpp-totals-table .bcpp-total-divider td {
-	border-top: 1px solid #e2e8f0;
+	border-top: 1px solid #E3DCD0;
 	padding-top: 10px !important;
 }
 
 .bcpp-totals-table .bcpp-total-lbl {
 	font-size: 16px !important;
 	font-weight: 700 !important;
-	color: #0f172a !important;
+	color: #1C1A17 !important;
 	text-transform: uppercase;
 }
 
@@ -1615,7 +1616,7 @@
 .frm_forms .bcpp-totals-table .bcpp-total-val input {
 	font-size: 20px !important;
 	font-weight: 700 !important;
-	color: #0f172a !important;
+	color: #1C1A17 !important;
 }
 
 /* 13. Submit Button (Positioned Bottom Right) */
@@ -1666,8 +1667,8 @@ button.frm_button_submit {
 	margin-left: auto !important;
 	margin-right: 0 !important;
 	float: right !important;
-	background-color: #29ABDE !important;
-	background: #29ABDE !important;
+	background-color: #A8430D !important;
+	background: #A8430D !important;
 	color: #ffffff !important;
 	font-size: 15px !important;
 	font-weight: 600 !important;
@@ -1684,8 +1685,8 @@ button.frm_button_submit {
 .bcpp-order-form .frm_button_submit:hover,
 #form_bcpp-order-form .frm_button_submit:hover,
 .frm_forms .frm_button_submit:hover {
-	background-color: #0ea5e9 !important;
-	background: #0ea5e9 !important;
+	background-color: #8A3609 !important;
+	background: #8A3609 !important;
 }
 
 /* Responsive Adjustments */
@@ -1715,7 +1716,7 @@ button.frm_button_submit {
 		display: block !important;
 		font-size: 13px !important;
 		font-weight: 600 !important;
-		color: #334155 !important;
+		color: #2B2824 !important;
 		margin: 0 0 6px 0 !important;
 		padding: 0 !important;
 		text-align: left !important;
@@ -1750,7 +1751,7 @@ button.frm_button_submit {
 		margin-top: 10px !important;
 		margin-bottom: 16px !important;
 		background: #ffffff !important;
-		border: 1px solid #e2e8f0 !important;
+		border: 1px solid #E3DCD0 !important;
 		border-radius: 8px !important;
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
 		box-sizing: border-box !important;
@@ -1839,7 +1840,7 @@ button.frm_button_submit {
 		grid-column-start: auto !important;
 		margin: 8px 0 0 0 !important;
 		padding: 10px 0 0 0 !important;
-		border-top: 1px dashed #e2e8f0 !important;
+		border-top: 1px dashed #E3DCD0 !important;
 		float: none !important;
 		clear: both !important;
 		gap: 8px !important;
@@ -1887,8 +1888,8 @@ button.frm_button_submit {
 	max-width: 900px !important;
 	width: 100% !important;
 	margin: 0 auto !important;
-	font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif !important;
-	color: #334155 !important;
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+	color: #2B2824 !important;
 }
 
 #form_gift-certificates .frm_fields_container {
@@ -1992,7 +1993,7 @@ button.frm_button_submit {
 	height: 42px !important;
 	padding: 0 12px !important;
 	font-size: 14px !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	box-sizing: border-box !important;
 	width: 100% !important;
 	display: block !important;
@@ -2003,8 +2004,8 @@ button.frm_button_submit {
 .bcpp-gift-box input:focus,
 #form_gift-certificates input:focus,
 #form_gift-certificates textarea:focus {
-	border-color: #29abde !important;
-	outline: 2px solid rgba(41, 171, 222, 0.2) !important;
+	border-color: #A8430D !important;
+	outline: 2px solid rgba(168, 67, 13, 0.2) !important;
 }
 
 /* Full width fields (Message, Amount) */
@@ -2030,7 +2031,7 @@ button.frm_button_submit {
 	padding: 10px 12px !important;
 	line-height: 1.5 !important;
 	font-size: 14px !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	box-sizing: border-box !important;
 	width: 100% !important;
 	display: block !important;
@@ -2076,7 +2077,7 @@ button.frm_button_submit {
 	padding: 4px 6px !important;
 	font-size: 14.5px !important;
 	font-weight: 600 !important;
-	color: #334155 !important;
+	color: #2B2824 !important;
 	user-select: none !important;
 	transition: color 0.15s ease, background 0.15s ease !important;
 	border-radius: 4px !important;
@@ -2085,13 +2086,13 @@ button.frm_button_submit {
 .bcpp-gift-amount-item:hover,
 #frm_field_153_container .frm_radio:hover,
 #frm_field_127_container .frm_radio:hover {
-	color: #29abde !important;
-	background: rgba(41, 171, 222, 0.06) !important;
+	color: #A8430D !important;
+	background: rgba(168, 67, 13, 0.06) !important;
 }
 
 .bcpp-gift-amount-item.is-selected {
-	color: #29abde !important;
-	background: rgba(41, 171, 222, 0.1) !important;
+	color: #A8430D !important;
+	background: rgba(168, 67, 13, 0.1) !important;
 }
 
 .bcpp-gift-amount-item input[type="radio"],
@@ -2104,7 +2105,7 @@ button.frm_button_submit {
 	margin: 0 !important;
 	padding: 0 !important;
 	cursor: pointer !important;
-	accent-color: #29abde !important;
+	accent-color: #A8430D !important;
 	vertical-align: middle !important;
 	display: inline-block !important;
 }
@@ -2126,7 +2127,7 @@ button.frm_button_submit {
 .bcpp-gift-section-title {
 	font-size: 17px !important;
 	font-weight: 700 !important;
-	color: #1e293b !important;
+	color: #1C1A17 !important;
 	margin-top: 24px !important;
 	margin-bottom: 6px !important;
 	line-height: 1.4 !important;
@@ -2138,7 +2139,7 @@ button.frm_button_submit {
 .bcpp-gift-div-border {
 	width: 100% !important;
 	height: 1px !important;
-	border-bottom: 1px solid #cbd5e1 !important;
+	border-bottom: 1px solid #C9C1B4 !important;
 	margin-top: 8px !important;
 	margin-bottom: 16px !important;
 	clear: both !important;
@@ -2149,8 +2150,8 @@ button.frm_button_submit {
 	margin-top: 10px !important;
 	margin-bottom: 20px !important;
 	padding: 18px 20px !important;
-	background: #f8fafc !important;
-	border: 1px solid #e2e8f0 !important;
+	background: #FAF8F4 !important;
+	border: 1px solid #E3DCD0 !important;
 	border-radius: 6px !important;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
 	width: 100% !important;
@@ -2162,7 +2163,7 @@ button.frm_button_submit {
 	align-items: center !important;
 	padding: 12px 14px !important;
 	background: #ffffff !important;
-	border: 1px solid #cbd5e1 !important;
+	border: 1px solid #C9C1B4 !important;
 	border-radius: 4px !important;
 	margin-bottom: 16px !important;
 }
@@ -2170,7 +2171,7 @@ button.frm_button_submit {
 .bcpp-gift-summary-lbl {
 	font-size: 15px !important;
 	font-weight: 700 !important;
-	color: #1e293b !important;
+	color: #1C1A17 !important;
 }
 
 .bcpp-gift-summary-val {
@@ -2190,7 +2191,7 @@ button.frm_button_submit {
 }
 
 #form_gift-certificates .frm_button_submit {
-	background-color: #29abde !important;
+	background-color: #A8430D !important;
 	color: #ffffff !important;
 	font-size: 16px !important;
 	font-weight: 700 !important;
@@ -2231,3 +2232,184 @@ button.frm_button_submit {
 	}
 }
 
+
+/* ==========================================================================
+   Site theme layer (Oct 2026 redesign)
+   Matches the forms to the new Bucks Photo site: Inter text, Fraunces headings,
+   warm neutrals, burnt-orange accent, 10px inputs, pill buttons.
+   Colors/fonts read the Elementor global tokens, with the same values as fallbacks.
+   ========================================================================== */
+.frm_forms {
+	--bcpp-ink: var(--e-global-color-primary, #1C1A17);
+	--bcpp-text: var(--e-global-color-text, #2B2824);
+	--bcpp-muted: var(--e-global-color-secondary, #5A544B);
+	--bcpp-accent: var(--e-global-color-accent, #A8430D);
+	--bcpp-accent-hover: var(--e-global-color-bcppaccenthover, #8A3609);
+	--bcpp-line: var(--e-global-color-bcppline, #E3DCD0);
+	--bcpp-field-line: #C9C1B4;
+	--bcpp-paper: var(--e-global-color-bcpppaper, #FAF8F4);
+	--bcpp-sand: var(--e-global-color-bcppsand, #F2EDE4);
+	--bcpp-display: var(--e-global-typography-primary-font-family, 'Fraunces'), 'Fraunces', Georgia, serif;
+}
+
+/* Inputs, selects, textareas */
+.frm_forms input[type="text"], .frm_forms input[type="email"], .frm_forms input[type="number"], .frm_forms input[type="tel"], .frm_forms select, .frm_forms textarea,
+#form_bcpp-order-form input[type="text"], #form_bcpp-order-form input[type="email"], #form_bcpp-order-form input[type="number"], #form_bcpp-order-form input[type="tel"], #form_bcpp-order-form select, #form_bcpp-order-form textarea,
+#form_gift-certificates input[type="text"], #form_gift-certificates input[type="email"], #form_gift-certificates input[type="number"], #form_gift-certificates input[type="tel"], #form_gift-certificates select, #form_gift-certificates textarea {
+	border: 1.5px solid var(--bcpp-field-line) !important;
+	border-radius: 10px !important;
+	font-size: 15px !important;
+	color: var(--bcpp-text) !important;
+	background-color: #fff !important;
+}
+.frm_forms input:hover, .frm_forms select:hover, .frm_forms textarea:hover { border-color: var(--bcpp-muted) !important; }
+.frm_forms input:focus, .frm_forms select:focus, .frm_forms textarea:focus,
+#form_bcpp-order-form input:focus, #form_bcpp-order-form select:focus, #form_bcpp-order-form textarea:focus,
+#form_gift-certificates input:focus, #form_gift-certificates select:focus, #form_gift-certificates textarea:focus {
+	border-color: var(--bcpp-accent) !important;
+	outline: none !important;
+	box-shadow: 0 0 0 3px rgba(168, 67, 13, 0.18) !important;
+}
+.frm_forms textarea, #form_bcpp-order-form textarea, #form_gift-certificates textarea { padding-top: 10px !important; }
+.frm_forms select, #form_bcpp-order-form select, #form_gift-certificates select {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"><path d="M1 1l5 5 5-5" stroke="%231c1a17" stroke-width="2" fill="none"/></svg>') !important;
+	background-position: right 12px center !important;
+	padding-right: 32px !important;
+}
+.frm_forms input::placeholder, .frm_forms textarea::placeholder { color: #8C8478 !important; }
+
+/* Labels */
+.frm_forms .frm_primary_label, #form_bcpp-order-form .frm_primary_label, #form_gift-certificates .frm_primary_label,
+#form_gift-certificates .bcpp-gift-box .frm_primary_label {
+	font-weight: 600 !important;
+	font-size: 14px !important;
+	color: var(--bcpp-ink) !important;
+	letter-spacing: 0 !important;
+}
+.frm_forms .frm_required { color: var(--bcpp-accent) !important; }
+
+/* The page hero carries the page's H1, so the form's own title is not shown. */
+.bcpp-page-form .bcpp-header-title { display: none !important; }
+
+/* Section titles in the display font */
+.frm_forms .bcpp-section-title, #form_bcpp-order-form .bcpp-section-title {
+	font-family: var(--bcpp-display) !important;
+	font-size: 21px !important;
+	font-weight: 600 !important;
+	color: var(--bcpp-ink) !important;
+}
+.frm_forms .bcpp-section-title .desktoptext, .frm_forms .bcpp-section-title span {
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', sans-serif !important;
+	color: var(--bcpp-muted) !important;
+}
+.frm_forms .bcpp-instruction-banner { background: var(--e-global-color-bcppaccentsoft, #FBEEE4) !important; border: 0 !important; border-left: 4px solid var(--bcpp-accent) !important; border-radius: 0 10px 10px 0 !important; color: var(--bcpp-text) !important; }
+.frm_forms .bcpp-instruction-banner a, .frm_forms .bcpp-top-notice a { color: var(--bcpp-accent) !important; }
+.frm_forms .bcpp-instruction-banner .bcpp-inline-icon { background-color: var(--bcpp-accent) !important; }
+
+/* Submit buttons: site pill button */
+.frm_forms .frm_submit .frm_button_submit, .frm_forms button.frm_button_submit, .frm_forms input[type="submit"],
+#form_bcpp-order-form #send-message, #form_bcpp-order-form .frm_submit .frm_button_submit, #form_gift-certificates .frm_submit .frm_button_submit,
+.frm_button_submit.frm_final_submit {
+	background: var(--bcpp-accent) !important;
+	background-color: var(--bcpp-accent) !important;
+	color: #fff !important;
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', sans-serif !important;
+	font-size: 16px !important;
+	font-weight: 600 !important;
+	height: auto !important;
+	padding: 14px 34px !important;
+	border-radius: 999px !important;
+	border: 0 !important;
+	box-shadow: none !important;
+	line-height: 1.2 !important;
+}
+.frm_forms .frm_submit .frm_button_submit:hover, .frm_forms button.frm_button_submit:hover,
+#form_bcpp-order-form #send-message:hover, .frm_button_submit.frm_final_submit:hover {
+	background: var(--bcpp-accent-hover) !important;
+	background-color: var(--bcpp-accent-hover) !important;
+}
+.frm_forms .frm_button_submit:focus-visible { outline: 3px solid #1d4ed8 !important; outline-offset: 3px !important; }
+
+/* Payment method tabs (they are <button>s, so undo the site's global button style) */
+.frm_forms button.bcpp-payment-tab, .frm_forms .bcpp-payment-tab {
+	background: var(--bcpp-paper) !important;
+	border: 1.5px solid var(--bcpp-field-line) !important;
+	border-radius: 10px !important;
+	color: var(--bcpp-muted) !important;
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', sans-serif !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	padding: 12px !important;
+	box-shadow: none !important;
+	text-transform: none !important;
+	letter-spacing: 0 !important;
+}
+.frm_forms button.bcpp-payment-tab:hover { background: var(--bcpp-sand) !important; color: var(--bcpp-ink) !important; border-color: var(--bcpp-muted) !important; }
+.frm_forms button.bcpp-payment-tab.active { background: #fff !important; border-color: var(--bcpp-accent) !important; color: var(--bcpp-accent) !important; box-shadow: 0 0 0 1px var(--bcpp-accent) !important; }
+.frm_forms button.bcpp-payment-tab[data-method="venmo"].active { border-color: #008CFF !important; color: #008CFF !important; box-shadow: 0 0 0 1px #008CFF !important; }
+.frm_forms button.bcpp-payment-tab[data-method="zelle"].active { border-color: #7414CA !important; color: #7414CA !important; box-shadow: 0 0 0 1px #7414CA !important; }
+
+/* Gift form: TO / FROM boxes as site cards with a small label */
+.bcpp-gift-box {
+	background-color: #fff !important;
+	border: 1px solid var(--bcpp-line) !important;
+	border-radius: 14px !important;
+	padding: 44px 22px 22px !important;
+	margin-top: 8px !important;
+}
+.bcpp-gift-tab {
+	top: 18px !important;
+	left: 22px !important;
+	background: transparent !important;
+	color: var(--bcpp-accent) !important;
+	padding: 0 !important;
+	height: auto !important;
+	line-height: 1 !important;
+	font-size: 12px !important;
+	letter-spacing: 0.12em !important;
+}
+#form_gift-certificates .horizontal_radio, #form_gift-certificates .frm_inline, .bcpp-gift-amount-radios {
+	border: 1px solid var(--bcpp-line) !important;
+	border-radius: 14px !important;
+	padding: 14px 16px !important;
+}
+.bcpp-gift-amount-item, #frm_field_153_container .frm_radio, #frm_field_127_container .frm_radio { border-radius: 999px !important; padding: 6px 12px !important; }
+
+/* Additional Services column labels (h4) — same small label style as the paper rows */
+.frm_forms .bcpp-addl-labels h4, .frm_forms .bcpp-labels-section h4, #form_bcpp-order-form .bcpp-addl-labels h4 {
+	font-family: var(--e-global-typography-text-font-family, 'Inter'), 'Inter', sans-serif !important;
+	font-size: 13.5px !important;
+	font-weight: 600 !important;
+	line-height: 1.3 !important;
+	color: var(--bcpp-ink) !important;
+	margin: 0 !important;
+}
+
+/* Gift amount chips: highlight the chosen amount */
+#form_gift-certificates .frm_radio:has(input:checked), .bcpp-gift-amount-item.is-selected {
+	border-color: var(--bcpp-accent) !important;
+	background: var(--e-global-color-bcppaccentsoft, #FBEEE4) !important;
+	color: var(--bcpp-accent) !important;
+}
+#form_gift-certificates .frm_radio:hover, .bcpp-gift-amount-item:hover { border-color: var(--bcpp-accent) !important; }
+#form_gift-certificates .frm_opt_container { gap: 10px !important; }
+#form_gift-certificates .frm_radio > label {
+	display: inline-flex !important;
+	align-items: center !important;
+	gap: 8px !important;
+	padding: 8px 14px !important;
+	border: 1.5px solid var(--bcpp-field-line) !important;
+	border-radius: 999px !important;
+	background: #fff !important;
+	font-size: 15px !important;
+	font-weight: 600 !important;
+	color: var(--bcpp-text) !important;
+	cursor: pointer !important;
+	transition: border-color .15s ease, background .15s ease !important;
+}
+#form_gift-certificates .frm_radio > label:hover { border-color: var(--bcpp-accent) !important; }
+#form_gift-certificates .frm_radio:has(input:checked) > label { border-color: var(--bcpp-accent) !important; background: var(--e-global-color-bcppaccentsoft, #FBEEE4) !important; color: var(--bcpp-accent) !important; }
+#form_gift-certificates .frm_radio input[type="radio"] { accent-color: var(--bcpp-accent) !important; margin: 0 !important; }
+/* Totals table never wider than its card on small phones */
+.frm_forms .bcpp-totals-table { width: 100% !important; max-width: 100% !important; table-layout: fixed !important; }
+.frm_forms .bcpp-totals-table td { overflow-wrap: anywhere; }

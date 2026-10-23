@@ -70,7 +70,7 @@
 
 		var venmoCfg = ( settings && settings.venmo ) ? settings.venmo : { enabled: true, handle: '@bill-nyman-photo', name: 'William Nyman', qrUrl: '' };
 		var zelleCfg = ( settings && settings.zelle ) ? settings.zelle : { enabled: true, phone: '445-293-1175', name: 'BUCKS PHOTO', memo: 'bucks-photo', qrUrl: '' };
-		var paymentNote = ( settings && typeof settings.paymentNote === 'string' ) ? settings.paymentNote : 'Payment Note: For Venmo and Zelle payments specifically, please submit payment and then after your payment is sent, then click the blue submit button below to send your full order to Bucks Photo.';
+		var paymentNote = ( settings && typeof settings.paymentNote === 'string' ) ? settings.paymentNote : 'Payment Note: For Venmo and Zelle payments specifically, please submit payment and then after your payment is sent, then click the Submit button below to send your full order to Bucks Photo.';
 
 		var isCardEnabled = !! ( settings && settings.stripeEnabled );
 		var isVenmoEnabled = !! venmoCfg.enabled;
@@ -269,7 +269,7 @@
 		// 1. Top Order Form Header & Notice
 		if ( ! $( '#order_form_abc' ).length ) {
 			$form.prepend(
-				'<div class="bcpp-header-title"><h1 id="order_form_abc">Order Form</h1></div>' +
+				'<div class="bcpp-header-title"><p id="order_form_abc" class="bcpp-form-title">Order Form</p></div>' + // a <p>: the page itself carries the H1
 				'<div class="bcpp-section-title" id="your_information">Your Information</div>' +
 				'<div class="bcpp-div-border"></div>'
 			);
