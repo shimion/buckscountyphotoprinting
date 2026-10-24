@@ -270,7 +270,7 @@
 		if ( ! $( '#order_form_abc' ).length ) {
 			$form.prepend(
 				'<div class="bcpp-header-title"><p id="order_form_abc" class="bcpp-form-title">Order Form</p></div>' + // a <p>: the page itself carries the H1
-				'<div class="bcpp-section-title" id="your_information">Your Information</div>' +
+				'<h2 class="bcpp-section-title" id="your_information">Your Information</h2>' +
 				'<div class="bcpp-div-border"></div>'
 			);
 		}
@@ -285,7 +285,7 @@
 						'Click <span class="bcpp-inline-icon">+</span> or <span class="bcpp-inline-icon">–</span> to add or delete entry rows below. ' +
 						'Upload files using <a href="https://www.wetransfer.com" target="_blank" rel="noopener noreferrer">www.wetransfer.com</a> to bill@bucksphoto.com' +
 					'</div>' +
-					'<div class="bcpp-section-title" id="premium_papers">Premium Papers <span class="desktoptext">' + premiumDesc + '</span></div>' +
+					'<h2 class="bcpp-section-title" id="premium_papers">Premium Papers <span class="desktoptext">' + premiumDesc + '</span></h2>' +
 					'<div class="bcpp-div-border"></div>'
 				).insertBefore( $premiumSec );
 			}
@@ -293,12 +293,12 @@
 			if ( $firstPremRepeat.length && ! $( '#bcpp-premium-labels' ).length ) {
 				$(
 					'<div class="bcpp-labels-section" id="bcpp-premium-labels">' +
-						'<div class="bcpp-lbl-file"><h4>File Name</h4></div>' +
-						'<div class="bcpp-lbl-border"><h4>Border</h4></div>' +
-						'<div class="bcpp-lbl-size"><h4>Print Size</h4></div>' +
-						'<div class="bcpp-lbl-paper"><h4>Premium Paper</h4></div>' +
-						'<div class="bcpp-lbl-amt"><h4>Amt.</h4></div>' +
-						'<div class="bcpp-lbl-sub"><h4>Sub Total</h4></div>' +
+						'<div class="bcpp-lbl-file"><span class="bcpp-col-label">File Name</span></div>' +
+						'<div class="bcpp-lbl-border"><span class="bcpp-col-label">Border</span></div>' +
+						'<div class="bcpp-lbl-size"><span class="bcpp-col-label">Print Size</span></div>' +
+						'<div class="bcpp-lbl-paper"><span class="bcpp-col-label">Premium Paper</span></div>' +
+						'<div class="bcpp-lbl-amt"><span class="bcpp-col-label">Amt.</span></div>' +
+						'<div class="bcpp-lbl-sub"><span class="bcpp-col-label">Sub Total</span></div>' +
 					'</div>'
 				).insertBefore( $firstPremRepeat );
 			}
@@ -310,7 +310,7 @@
 			var specialtyDesc = $.trim( $specialtySec.find( '.frm_description' ).first().text() ) || 'hahnemuhle photo rag, moab metallic pearl, canvas';
 			if ( ! $( '#specialty_papers' ).length ) {
 				$(
-					'<div class="bcpp-section-title" id="specialty_papers">Specialty Papers <span class="desktoptext">' + specialtyDesc + '</span></div>' +
+					'<h2 class="bcpp-section-title" id="specialty_papers">Specialty Papers <span class="desktoptext">' + specialtyDesc + '</span></h2>' +
 					'<div class="bcpp-div-border"></div>'
 				).insertBefore( $specialtySec );
 			}
@@ -318,12 +318,12 @@
 			if ( $firstSpecRepeat.length && ! $( '#bcpp-specialty-labels' ).length ) {
 				$(
 					'<div class="bcpp-labels-section" id="bcpp-specialty-labels">' +
-						'<div class="bcpp-lbl-file"><h4>File Name</h4></div>' +
-						'<div class="bcpp-lbl-border"><h4>Border</h4></div>' +
-						'<div class="bcpp-lbl-size"><h4>Print Size</h4></div>' +
-						'<div class="bcpp-lbl-paper"><h4>Specialty Paper</h4></div>' +
-						'<div class="bcpp-lbl-amt"><h4>Amt.</h4></div>' +
-						'<div class="bcpp-lbl-sub"><h4>Sub Total</h4></div>' +
+						'<div class="bcpp-lbl-file"><span class="bcpp-col-label">File Name</span></div>' +
+						'<div class="bcpp-lbl-border"><span class="bcpp-col-label">Border</span></div>' +
+						'<div class="bcpp-lbl-size"><span class="bcpp-col-label">Print Size</span></div>' +
+						'<div class="bcpp-lbl-paper"><span class="bcpp-col-label">Specialty Paper</span></div>' +
+						'<div class="bcpp-lbl-amt"><span class="bcpp-col-label">Amt.</span></div>' +
+						'<div class="bcpp-lbl-sub"><span class="bcpp-col-label">Sub Total</span></div>' +
 					'</div>'
 				).insertBefore( $firstSpecRepeat );
 			}
@@ -334,7 +334,7 @@
 		if ( $addlSec.length ) {
 			if ( ! $( '#additional_services' ).length ) {
 				$(
-					'<div class="bcpp-section-title" id="additional_services">Additional Services <span class="desktoptext">scanning, retouching, custom sizes, shipping</span></div>' +
+					'<h2 class="bcpp-section-title" id="additional_services">Additional Services <span class="desktoptext">scanning, retouching, custom sizes, shipping</span></h2>' +
 					'<div class="bcpp-div-border"></div>'
 				).insertBefore( $addlSec );
 			}
@@ -342,9 +342,9 @@
 			if ( $firstAddlRepeat.length && ! $( '#bcpp-addl-labels' ).length ) {
 				$(
 					'<div class="bcpp-addl-labels" id="bcpp-addl-labels">' +
-						'<div class="bcpp-lbl-service"><h4>Service</h4></div>' +
-						'<div class="bcpp-lbl-notes"><h4>Notes</h4></div>' +
-						'<div class="bcpp-lbl-addsub"><h4>Sub Total</h4></div>' +
+						'<div class="bcpp-lbl-service"><span class="bcpp-col-label">Service</span></div>' +
+						'<div class="bcpp-lbl-notes"><span class="bcpp-col-label">Notes</span></div>' +
+						'<div class="bcpp-lbl-addsub"><span class="bcpp-col-label">Sub Total</span></div>' +
 					'</div>'
 				).insertBefore( $firstAddlRepeat );
 			}

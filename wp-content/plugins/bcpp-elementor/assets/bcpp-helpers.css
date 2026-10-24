@@ -97,3 +97,6 @@ figcaption, .widget-image-caption { font-style: normal; }
    whether the title is short or wraps onto two lines (Bill, Oct 23) */
 .e-con:has(> .elementor-widget-icon:first-child + .elementor-widget-heading:last-child) > .elementor-widget-icon { flex: 0 0 auto !important; width: auto !important; max-width: none !important; }
 .e-con:has(> .elementor-widget-icon:first-child + .elementor-widget-heading:last-child) > .elementor-widget-heading { flex: 1 1 0% !important; min-width: 0; }
+
+/* Artist Focus photos open in the lightbox: show a zoom cursor */
+.bcpp-zoom a { cursor: zoom-in; }
