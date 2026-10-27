@@ -2417,3 +2417,7 @@ button.frm_button_submit {
 
 /* Form section titles are real H2s now (the page's sections under its H1): keep the label look, drop theme heading spacing */
 .frm_forms h2.bcpp-section-title { line-height: 1.3 !important; letter-spacing: 0 !important; padding: 0 !important; }
+
+/* Bill, Oct 25: the "Click + or – …" instruction line a bit bigger, to read at the size of the "File Name" column labels */
+.frm_forms .bcpp-instruction-banner { font-size: 15.5px !important; font-weight: 500 !important; line-height: 1.6 !important; }
+.frm_forms .bcpp-instruction-banner .bcpp-inline-icon { width: 22px !important; height: 22px !important; }
